@@ -1,0 +1,190 @@
+.btn{
+    display: block;
+    padding: 0;
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transition: .25s ease;  
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.btn::-moz-focus-inner {border: 0;}
+.btn:disabled {
+	cursor: default;
+	opacity: 1;
+	user-select: none;	
+}
+.btn--yello{
+	padding: 1.3rem 3.2rem;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	background: #FCD846;
+	border-radius: 2.5rem;
+	white-space: nowrap;
+}
+.btn--yello:hover{background: #fcf546;}
+.btn--black{
+	padding: 1.3rem 3.2rem;
+	font-size: 14px;
+	color: #FCD846;
+	font-weight: bold;
+	text-align: center;
+	background: #262A3C;
+	border-radius: 2.5rem;
+	white-space: nowrap;
+}
+.btn--black:hover{background: #000;}
+.btn--blue{
+	padding: 1.3rem 3.2rem;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	background: #2992FA;
+	border-radius: 2.5rem;
+	white-space: nowrap;
+}
+.btn--blue:hover{
+	background: #FCD846;
+	color: #000;
+}
+.btn--white{
+	border: .15rem solid #fff;
+	border-radius: 2.6rem;	
+    padding: 1.15rem 4.2rem;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+.btn--white:hover{
+	color: #000;
+	background: #fff;
+}
+.btn--black-brd{
+	border: .15rem solid #262A3C;
+	border-radius: 2.6rem;	
+    padding: 1.15rem 4.2rem;
+	font-size: 14px;
+	color: #262A3C;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+.btn--black-brd:hover{
+	color: #FCD846;
+	background: #262A3C;
+}
+.btn--blue-brd{
+	border: .15rem solid #2992FA;
+	border-radius: 2.6rem;	
+    padding: 1.15rem 4.2rem;
+	font-size: 14px;
+	color: #2992FA;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+.btn--blue-brd:hover{
+	color: #fff;
+	background: #2992FA;
+}
+.btn--yello-brd{
+	border: .15rem solid #FCD846;
+	border-radius: 2.6rem;	
+    padding: 1.15rem 4.2rem;
+	font-size: 14px;
+	color: #FCD846;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+.btn--yello-brd:hover{
+	color: #000;
+	background: #FCD846;
+}
+.scroll-down{
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.scroll-down:after {
+    content: '';
+    display: block;
+    background: url(../img/icons/chevrone-down.svg) center center no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 2.7rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: jump 1s infinite;
+    animation: jump 1s infinite;
+}
+.scroll-down:hover:after{animation-play-state: paused;}
+@-webkit-keyframes jump {
+	0% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+	50% {
+		margin-top: -1.2rem;
+		animation-timing-function: ease-out;
+	}
+	55% {
+		margin-top: -1.4rem;
+		animation-timing-function: ease-in;
+	}
+	65% {
+		margin-top: -1rem;
+		animation-timing-function: ease-out;
+	}
+	95% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+}
+@keyframes jump {
+	0% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+	50% {
+		margin-top: -1.2rem;
+		animation-timing-function: ease-out;
+	}
+	55% {
+		margin-top: -1.4rem;
+		animation-timing-function: ease-in;
+	}
+	65% {
+		margin-top: -1rem;
+		animation-timing-function: ease-out;
+	}
+	95% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		margin-top: 0;
+		animation-timing-function: ease-in;
+	}
+}

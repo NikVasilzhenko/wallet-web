@@ -1,0 +1,41 @@
+.steps-slider__wrap .noUi-base {
+  width: 81.25%;
+  top: 44.5px;
+  left: 33px;
+  z-index: 9999;
+}
+.steps-slider__wrap .noUi-origin {
+  top: -3px !important;
+}
+.steps-slider__wrap .noUi-handle {
+  position: absolute;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  border: 0.6rem solid #e1e1e1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border-color: #fcd846;
+  z-index: 999999;
+  transition: all 0.3s linear;
+}
+.steps-slider__wrap .noUi-handle:before {
+  display: none;
+}
+.steps-slider__wrap .noUi-handle:after {
+  display: none;
+}
+.steps-slider__wrap .noUi-connects {
+  visibility: hidden;
+  height: 0.6rem;
+  background: #e1e1e1;
+  border-radius: 0.3rem;
+}
+.steps-slider__wrap .noUi-target {
+  background: none;
+  border: none;
+  box-shadow: none;
+}

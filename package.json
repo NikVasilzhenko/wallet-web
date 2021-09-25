@@ -1,0 +1,28 @@
+{
+  "name": "wallet-last",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server .",
+    "build": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikVasilzhenko/wallet-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikVasilzhenko/wallet-web/issues"
+  },
+  "homepage": "https://github.com/NikVasilzhenko/wallet-web#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "i18n": "^0.8.3",
+    "intl-locales-supported": "^1.6.0"
+  }
+}

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/subset-CircularStd-Book.eot');
+    src: url('../fonts/subset-CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-CircularStd-Book.woff2') format('woff2'),
+        url('../fonts/subset-CircularStd-Book.woff') format('woff'),
+        url('../fonts/subset-CircularStd-Book.ttf') format('truetype'),
+        url('../fonts/subset-CircularStd-Book.svg#CircularStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/subset-CircularStd-Bold.eot');
+    src: url('../fonts/subset-CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/subset-CircularStd-Bold.woff') format('woff'),
+        url('../fonts/subset-CircularStd-Bold.ttf') format('truetype'),
+        url('../fonts/subset-CircularStd-Bold.svg#CircularStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/subset-CircularStd-Medium.eot');
+    src: url('../fonts/subset-CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/subset-CircularStd-Medium.woff') format('woff'),
+        url('../fonts/subset-CircularStd-Medium.ttf') format('truetype'),
+        url('../fonts/subset-CircularStd-Medium.svg#CircularStd-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/subset-CircularStd-Book.eot');
+    src: url('../fonts/subset-CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-CircularStd-Book.woff2') format('woff2'),
+        url('../fonts/subset-CircularStd-Book.woff') format('woff'),
+        url('../fonts/subset-CircularStd-Book.ttf') format('truetype'),
+        url('../fonts/subset-CircularStd-Book.svg#CircularStd-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

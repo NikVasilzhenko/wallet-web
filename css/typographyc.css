@@ -1,0 +1,66 @@
+/*typographyc-reset*/
+ol,ul,li{    
+    margin:0;
+    padding: 0;    
+}
+ul li{list-style: none;}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*link reset*/
+a{
+    text-decoration: none;
+    outline: none;
+    transition: .25s ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:-moz-any-link:focus ,
+a:-moz-focusring,
+a::-moz-focus-inner,
+a::-moz-focus-outer{
+	outline: 0!important;
+	outline: none;
+}
+a:active {outline: none;}
+
+/*img reset*/
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sec-title{
+	font-size: 9rem;
+	line-height: 100%;
+  	font-weight: bold;
+	color: rgba(255, 255, 255, .3);
+}
+.sec-title span{color: #fff;}
+.sec-sub-title{
+	font-size: 2.4rem;
+	line-height: 100%;
+	font-weight: bold;
+	margin: 7rem 0 2rem;
+}
+.sec-txt{
+	max-width: 43.5rem;
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+}
+.align-right{text-align: right;}
+
+.part--yello .sec-title{color: rgba(38, 42, 60, .2);}
+.part--yello .sec-title span{color: #262A3C;}
+
+.part--white .sec-title{color: rgba(41, 146, 250, 0.3);}
+.part--white .sec-title span{color: #2992FA;}
+
+.part--white-black-txt .sec-title{color: rgba(38, 42, 60, .3);}
+.part--white-black-txt .sec-title span{color: #262A3C;}
+
+.part--black .sec-title span{color: #FCD846;}
+
+.part--yellow-h .sec-title span{color: #FCD846;}

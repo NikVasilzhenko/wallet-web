@@ -1,0 +1,75 @@
+/*baisic*/
+html, body{
+    height: 100%;
+    width: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+html{font-size: 10px;}
+body{
+    font: 1.6rem/1.2 'Circular Std', sans-serif;
+    color: #000;
+	background: #fff;
+    font-weight: 400;
+    min-width: 310px; 
+    position: relative;
+	overflow-x: hidden;
+    font-stretch: condensed;
+    opacity: 1;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after {clear: both;}
+.clearfix{
+	zoom: 1;
+}
+
+/*box-sizing*/
+*, *:before, *:after, input[type="search"]{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*browserhappy*/
+.browserhappy{
+    background: red;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+.browserhappy strong{text-transform: uppercase;}
+.browserhappy a{
+	color: yellow;
+    text-decoration: underline;
+}
+.browserhappy a:hover{text-decoration: none;}
+
+.scroll-disabled-nav {
+    -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+    pointer-events: none;
+}
+
+@media only screen and (max-width : 1279px){html{font-size: 9.5px;}}
+@media only screen and (max-width : 1149px){html{font-size: 9px;}}
+@media only screen and (max-width : 1099px){html{font-size: 8.5px;}}
+@media only screen and (max-width : 1023px){html{font-size: 8px;}}
+@media only screen and (max-width : 969px){html{font-size: 7.5px;}}
+@media only screen and (max-width : 900px){html{font-size: 7px;}}
+@media only screen and (max-width : 849px){html{font-size: 6.5px;}}
+@media only screen and (max-width : 800px){html{font-size: 6px;}}
+@media only screen and (max-width : 767px){html{font-size: 10px;}}
+@media only screen and (max-width : 359px){html{font-size: 9px;}}

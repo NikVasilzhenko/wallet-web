@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.css" integrity="sha256-6pa9Ln4B/FyHlxOYaXuwpET9xH0e21iX0SPLg9P5Ro0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <!--SEO-->
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" " />
+    
+    <!-- browsers color frame -->	
+	<meta name="theme-color" content="#2992FA" />
+	<meta name="msapplication-navbutton-color" content="#2992FA" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#2992FA" />
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.es,Intl.~locale.pt,Intl.~locale.en,Intl.~locale.ru,Intl.~locale.kr"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
+	<script src="./js/intl.js"></script>
+</head>
+<body>
+   
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Your browser is <strong>out of date</strong>. Please <a href="https://browsehappy.com/"  target="_blank">update it</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+     	<p class="browserhappy">
+      		You need to enable JavaScript in your browser to display this page correctly.
+      	</p>
+    </noscript>
+    
+    <!-- start ROOT-->
+	<div class="test"></div>
+	
+	<div class="loader">
+		<p class="loader__text">
+		  <span class="highlighted">ultimate</span> bitcoin wallet
+		</p>
+		<p class="loader__text">
+		  send money for <span class="highlighted">free</span> anywhere
+		</p>
+		<p class="loader__text">
+		  first <span class="highlighted">global</span> crypto card
+		</p>
+		<p class="loader__text">
+		  spend your <span class="highlighted">bitcoin</span> easily
+		</p>
+		<p class="loader__text">
+		  secure convenient <span class="highlighted">app</span>
+		</p>
+	</div>
+    
+	<div class="wrapper" id="js-wrapper">
+		<div id="js-overwrap">
+			<div class="blind" id="js-blind"></div>
+			<nav class="menu" id="js-menu">
+				<ul class="menu__ring">
+					<li class="menu__item menu__item--store"><a href="#store" class="menu__item-dot js-nav-link" data-navlink="5"><span>Store</span></a></li>
+					<li class="menu__item menu__item--savings"><a href="#" class="menu__item-dot disable"><span>Savings</span></a></li>
+					<li class="menu__item menu__item--card"><a href="#card" class="menu__item-dot js-nav-link" data-navlink="7"><span>Card</span></a></li>			
+					<li class="menu__item menu__item--buy"><a href="#buy" class="menu__item-dot js-nav-link" data-navlink="1"><span>Buy</span></a></li>
+					<li class="menu__item menu__item--send"><a href="#send" class="menu__item-dot js-nav-link" data-navlink="2"><span>Send</span></a></li>
+					<li class="menu__item menu__item--cashout"><a href="#cashout" class="menu__item-dot js-nav-link" data-navlink="3"><span>Cash out</span></a></li>
+					<li class="menu__item menu__item--exchange"><a href="#exchange" class="menu__item-dot js-nav-link" data-navlink="4"><span>Exchange</span></a></li>
+					<li class="menu__item menu__item--store"><a href="#store" class="menu__item-dot js-nav-link" data-navlink="5"><span>Store</span></a></li>
+					<li class="menu__item menu__item--savings"><a href="#" class="menu__item-dot disable"><span>Savings</span></a></li>
+					<li class="menu__item menu__item--card"><a href="#card" class="menu__item-dot js-nav-link" data-navlink="7"><span>Card</span></a></li>
+					<li class="menu__item menu__item--buy"><a href="#buy" class="menu__item-dot js-nav-link" data-navlink="1"><span>Buy</span></a></li>
+					<li class="menu__item menu__item--send"><a href="#send" class="menu__item-dot js-nav-link" data-navlink="2"><span>Send</span></a></li>
+					<li class="menu__item menu__item--cashout"><a href="#cashout" class="menu__item-dot js-nav-link" data-navlink="3"><span>Cash out</span></a></li>
+					<li class="menu__item menu__item--exchange"><a href="#exchange" class="menu__item-dot js-nav-link" data-navlink="4"><span>Exchange</span></a></li>
+				</ul>
+			</nav>
+			<header class="header">
+				<div class="container">
+					<div class="flex-center-between header__wrap">
+						<div class="header-logo">
+							<svg width="187" height="34" viewBox="0 0 187 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M26.4998 6.4001C23.8998 4.3001 20.7998 3.1001 17.5998 3.1001C14.0998 3.1001 10.6998 4.4001 8.0998 6.9001C5.4998 9.4001 3.9998 12.6001 3.7998 16.2001V16.6001H5.3998V16.3001C5.7998 9.9001 11.1998 4.9001 17.5998 4.9001C20.4998 4.9001 23.1998 5.9001 25.3998 7.7001L25.4998 7.8001L26.6998 6.6001L26.4998 6.4001Z" />
+								<path d="M24.9 22.3001C23.2 24.6001 20.5 26.0001 17.6 26.0001C12.6 26.0001 8.6 22.0001 8.6 17.0001C8.6 12.1001 12.6 8.10007 17.6 8.10007C20.5 8.10007 23.2 9.50007 24.9 11.8001L25 12.0001L26.2 10.8001L26.1 10.7001C24.1 8.00007 20.9 6.50007 17.6 6.50007C11.7 6.40007 7 11.2001 7 17.0001C7 22.9001 11.8 27.6001 17.6 27.6001C20.9 27.6001 24.1 26.0001 26.1 23.4001L26.2 23.3001L25 22.1001L24.9 22.3001Z" />
+								<path d="M28.3998 8.40029C28.0998 8.10029 27.8998 7.70029 27.5998 7.40029L27.4998 7.30029L26.2998 8.50029L26.3998 8.60029C26.6998 8.90029 26.9998 9.20029 27.1998 9.60029L27.2998 9.80029L28.4998 8.60029L28.3998 8.40029Z" />
+								<path d="M25.3992 26.4L25.2992 26.5C23.0992 28.3 20.3992 29.3 17.4992 29.3C11.0992 29.3 5.69922 24.3 5.29922 17.9V17.5H3.69922V17.9C3.89922 21.4 5.49922 24.7 7.99922 27.2C10.5992 29.6 13.9992 31 17.4992 31C20.7992 31 23.8992 29.8 26.3992 27.7L26.4992 27.6L25.3992 26.4Z" />
+								<path d="M27.2998 24.3999L27.1998 24.5999C26.9998 24.8999 26.6998 25.1999 26.3998 25.5999L26.2998 25.6999L27.4998 26.8999L27.5998 26.7999C27.8998 26.4999 28.1998 26.0999 28.3998 25.7999L28.4998 25.6999L27.2998 24.3999Z" />
+								<path d="M29.3996 26.8001C26.4996 30.3001 22.1996 32.4001 17.5996 32.4001C9.09961 32.4001 2.29961 25.5001 2.29961 17.0001C2.29961 8.5001 9.09961 1.7001 17.5996 1.7001C22.1996 1.7001 26.4996 3.7001 29.3996 7.3001L29.4996 7.5001L30.6996 6.3001L30.5996 6.2001C27.3996 2.3001 22.5996 0.100098 17.5996 0.100098C8.19961 0.100098 0.599609 7.7001 0.599609 17.1001C0.599609 26.5001 8.19961 34.1001 17.5996 34.1001C22.5996 34.1001 27.3996 31.9001 30.5996 28.0001L30.6996 27.9001L29.4996 26.7001L29.3996 26.8001Z" />
+								<path d="M43.7988 16.7H43.9988V16.4C43.9988 16.1 43.9988 15.9 43.9988 15.6C43.9988 15.3 44.0988 15 44.1988 14.8C44.2988 14.5 44.3988 14.3 44.4988 14.1C44.5988 13.9 44.7988 13.7 44.8988 13.5C45.0988 13.3 45.2988 13.2 45.4988 13.1C45.6988 13 45.9988 13 46.2988 13C46.5988 13 46.8988 13.1 47.1988 13.2C47.3988 13.3 47.5988 13.5 47.7988 13.6C47.9988 13.8 48.0988 14 48.1988 14.3C48.2988 14.6 48.3988 14.9 48.3988 15.2V15.4H50.1988V15.2C50.0988 14.7 49.9988 14.2 49.7988 13.7C49.5988 13.3 49.3988 12.9 48.9988 12.5C48.6988 12.2 48.2988 11.9 47.7988 11.8C47.3988 11.6 46.7988 11.5 46.2988 11.5C45.7988 11.5 45.3988 11.6 44.9988 11.7C44.5988 11.8 44.2988 12 43.9988 12.3C43.6988 12.5 43.3988 12.8 43.1988 13.1C42.9988 13.4 42.7988 13.8 42.6988 14.1C42.5988 14.5 42.4988 14.9 42.3988 15.3C42.2988 15.7 42.2988 16.1 42.2988 16.5V16.8L43.7988 16.7Z" />
+								<path d="M48.3992 19.1001V19.3001C48.3992 19.6001 48.2992 19.9001 48.1992 20.2001C48.0992 20.5001 47.9992 20.7001 47.7992 20.9001C47.5992 21.1001 47.3992 21.2001 47.1992 21.3001C46.9992 21.4001 46.6992 21.4001 46.2992 21.4001C45.9992 21.4001 45.6992 21.3001 45.4992 21.3001C45.2992 21.2001 45.0992 21.1001 44.8992 20.9001C44.6992 20.7001 44.5992 20.5001 44.4992 20.3001C44.3992 20.1001 44.2992 19.8001 44.1992 19.6001C44.0992 19.3001 43.9992 19.0001 43.9992 18.7001C43.9992 18.4001 43.9992 18.1001 43.9992 17.9001V17.6001H42.1992V17.9001C42.1992 18.3001 42.1992 18.7001 42.2992 19.1001C42.3992 19.5001 42.4992 19.9001 42.5992 20.3001C42.6992 20.7001 42.8992 21.0001 43.0992 21.3001C43.2992 21.6001 43.5992 21.9001 43.8992 22.1001C44.1992 22.3001 44.5992 22.5001 44.8992 22.7001C45.2992 22.8001 45.6992 22.9001 46.1992 22.9001C46.6992 22.9001 47.1992 22.8001 47.6992 22.6001C48.0992 22.4001 48.4992 22.2001 48.8992 21.9001C49.1992 21.6001 49.4992 21.2001 49.6992 20.8001C49.8992 20.4001 49.9992 19.9001 50.0992 19.4001V19.2001L48.3992 19.1001Z" />
+								<path d="M59.5992 19.2002H57.6992V22.9002H59.5992V19.2002Z" />
+								<path d="M63.0994 18.0001C63.2994 17.9001 63.5994 17.7001 63.7994 17.6001C64.0994 17.4001 64.2994 17.2001 64.4994 16.9001C64.6994 16.6001 64.7994 16.4001 64.8994 16.0001C64.9994 15.7001 65.0994 15.3001 65.0994 15.0001C65.0994 14.4001 64.9994 13.9001 64.7994 13.5001C64.5994 13.1001 64.2994 12.7001 63.9994 12.4001C63.5994 12.1001 63.1994 11.9001 62.7994 11.8001C62.3994 11.7001 61.7994 11.6001 61.2994 11.6001H57.8994V18.4001H61.4994L63.5994 22.8001H65.3994H65.5994L63.0994 18.0001ZM63.0994 15.8001C62.9994 16.0001 62.7994 16.2001 62.6994 16.4001C62.4994 16.5001 62.2994 16.7001 61.9994 16.8001C61.6994 16.9001 61.4994 16.9001 61.1994 16.9001H59.4994V13.0001H61.0994C61.3994 13.0001 61.6994 13.1001 61.9994 13.1001C62.2994 13.1001 62.4994 13.3001 62.6994 13.5001C62.8994 13.6001 62.9994 13.9001 63.0994 14.1001C63.1994 14.3001 63.1994 14.6001 63.1994 14.9001C63.2994 15.3001 63.1994 15.5001 63.0994 15.8001Z" />
+								<path d="M78.1996 18.7L81.7996 11.5H79.7996L77.3996 16.7L75.0996 11.5H73.0996L76.6996 18.7H78.1996Z" />
+								<path d="M76.5996 22.8002H78.2996V19.7002H76.5996V22.8002Z" />
+								<path d="M113.4 11.5H104.8V13.1H113.4V11.5Z" />
+								<path d="M108.1 22.8H110V14H108.1V22.8Z" />
+								<path d="M137.8 19.3003H136V22.8003H137.8V19.3003Z" />
+								<path d="M141.3 18.0001C141.5 17.9001 141.8 17.7001 142 17.6001C142.3 17.4001 142.5 17.2001 142.7 16.9001C142.9 16.6001 143 16.4001 143.1 16.0001C143.2 15.7001 143.3 15.3001 143.3 15.0001C143.3 14.4001 143.2 13.9001 143 13.5001C142.8 13.1001 142.5 12.7001 142.2 12.4001C141.8 12.1001 141.4 11.9001 141 11.8001C140.5 11.7001 140 11.6001 139.5 11.6001H136.1V18.4001H139.7L141.8 22.8001H143.6H143.8L141.3 18.0001ZM141.4 15.8001C141.3 16.0001 141.1 16.2001 141 16.4001C140.8 16.5001 140.6 16.7001 140.3 16.8001C140 16.9001 139.8 16.9001 139.5 16.9001H137.8V13.0001H139.4C139.7 13.0001 140 13.1001 140.3 13.1001C140.6 13.1001 140.8 13.3001 141 13.5001C141.2 13.6001 141.3 13.9001 141.4 14.1001C141.5 14.3001 141.5 14.6001 141.5 14.9001C141.5 15.3001 141.5 15.5001 141.4 15.8001Z" />
+								<path d="M151.3 11.5V13.2H153.9V22.8H155.8V11.5H151.3Z" />
+								<path d="M171 11.5H169.3V19.1C169.3 19.4 169.2 19.7 169.2 20C169.1 20.3 169 20.5 168.8 20.7C168.6 20.9 168.4 21.1 168.2 21.2C168 21.3 167.7 21.4 167.3 21.4C167 21.4 166.7 21.3 166.4 21.2C166.2 21.1 166 20.9 165.8 20.7C165.6 20.5 165.5 20.2 165.4 20C165.3 19.7 165.3 19.4 165.3 19.1V17.6H163.6V19.1C163.6 19.6 163.7 20.1 163.9 20.6C164.1 21.1 164.3 21.5 164.7 21.8C165 22.2 165.4 22.4 165.9 22.6C166.3 22.8 166.9 22.9 167.4 22.9C167.9 22.9 168.4 22.8 168.9 22.6C169.3 22.4 169.8 22.1 170.1 21.8C170.4 21.4 170.7 21 170.9 20.6C171.1 20.1 171.2 19.6 171.2 19.1L171 11.5Z" />
+								<path d="M165.2 11.5H163.5V16.7H165.2V11.5Z" />
+								<path d="M184.3 11.5L182.5 16.6L180.8 11.5H178.8V22.8H180.5V18.3L180.4 15.2L181.9 19.8H183L184.6 14.9V16.7H186.3V11.5H184.3Z" />
+								<path d="M184.6 18.3002V22.8002H186.3V17.7002H184.6V18.3002Z" />
+								<path d="M96.7992 13.5C96.5992 13.1 96.2992 12.7 95.9992 12.4C95.5992 12.1 95.2992 11.9 94.7992 11.7C94.3992 11.6 93.8992 11.5 93.3992 11.5H89.6992V16H91.4992V13H93.4992C93.7992 13 94.0992 13.1 94.2992 13.1C94.4992 13.2 94.7992 13.3 94.8992 13.5C95.0992 13.7 95.1992 13.9 95.2992 14.1C95.3992 14.3 95.3992 14.6 95.3992 14.9C95.3992 15.2 95.2992 15.5 95.2992 15.7C95.1992 15.9 95.0992 16.1 94.8992 16.3C94.6992 16.5 94.4992 16.6 94.2992 16.7C94.0992 16.8 93.7992 16.8 93.4992 16.8H89.7992V22.7H91.5992V18.3H93.5992C94.0992 18.3 94.5992 18.2 94.9992 18.1C95.4992 18 95.8992 17.7 96.1992 17.4C96.4992 17.1 96.7992 16.7 96.9992 16.3C97.1992 15.9 97.2992 15.4 97.2992 14.8C97.0992 14.4 96.9992 13.9 96.7992 13.5Z" />
+								<path d="M127.499 17.8V16.2H122.999V13.1H128.199V11.5H121.199V17.8H122.799H127.499Z" />
+								<path d="M122.999 21.3002V18.7002H121.199V22.8002H128.299V21.3002H122.999Z" />
+							</svg>
+						</div>
+						<div class="flex-center-between header__bar">
+							<a href="/referral.html" class="header__referal header__bar-item">Referral program</a>
+							<a href="https://go.onelink.me/8cgW/48d01c59" class="btn btn--yello header__bar-item header__bar-download">Download the App</a>
+							<button class="btn btn--white header__bar-item  header__bar-login">Log in</button>
+							<a href="https://crypterium.zendesk.com/hc/en-us/categories/360000579914-Crypterium-App" class="flex-center-center header__bar-item header__faq">
+								<svg width="5" height="15" viewBox="0 0 5 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.26929 3.62843C3.27125 3.62843 4.08351 2.81618 4.08351 1.81421C4.08351 0.812251 3.27125 0 2.26929 0C1.26733 0 0.455078 0.812251 0.455078 1.81421C0.455078 2.81618 1.26733 3.62843 2.26929 3.62843Z" />
+									<path d="M5 14.3267H4.08354H0.91646H0V11.9015H0.91646V7.77431H0.0124696V5.34912H0.91646H3.62843H4.08354V11.9015H5V14.3267Z" />
+								</svg>
+							</a>
+							<div class="header__bar-item header__bar-item--select">
+								<div class="langs-select">
+									<div class="langs-select__wrap">
+										<div class="langs-select__active">
+											<div class="flex-center-start langs-select__item">
+												<div class="langs-select__item-flag"><img src="img/flags/united-kingdom-select.svg" alt="ENG" /></div>
+												<div class="langs-select__item-name">ENG</div>
+											</div>
+										</div>
+										<div class="langs-select__list">
+											<div class="flex-center-start langs-select__item">
+												<div class="langs-select__item-flag"><img src="img/flags/spain-select.svg" alt="SPA" /></div>
+												<div class="langs-select__item-name">SPA</div>
+											</div>
+											<div class="flex-center-start langs-select__item">
+												<div class="langs-select__item-flag"><img src="img/flags/portugal-select.svg" alt="PRT" /></div>
+												<div class="langs-select__item-name">PRT</div>
+											</div>
+											<div class="flex-center-start langs-select__item">
+												<div class="langs-select__item-flag"><img src="img/flags/russia-select.svg" alt="RUS" /></div>
+												<div class="langs-select__item-name">RUS</div>
+											</div>
+											<div class="flex-center-start langs-select__item">
+												<div class="langs-select__item-flag"><img src="img/flags/korean-select.svg" alt="KOR" /></div>
+												<div class="langs-select__item-name">KOR</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn mob-show mob-lang-btn js-lang-popup-open"><span class="flag"><img src="img/flags/united-kingdom-select.svg" alt="ENG" /></span></button>
+							<button class="btn mob-show mob-menu-btn js-mob-menu-btn"></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="lang-popup" id="js-lang-popup">
+				<div class="lang-popup__overlay js-lang-popup-open"></div>
+				<div class="lang-popup__main">
+					<div class="lang-popup__title">Select a language</div>
+					<form action="#" class="lang-popup__list">
+						<label class="flex-center-between lang-popup__item">
+							<span class="lang-popup__item-flag"><img src="img/flags/united-kingdom-select.svg" alt="ENG" /></span>
+							<span class="lang-popup__item-txt">English</span>
+							<input hidden="hidden" type="radio" name="lang" value="English" checked />
+							<span class="lang-popup__item-radio"></span>
+						</label>
+						<label class="flex-center-between lang-popup__item">
+							<span class="lang-popup__item-flag"><img src="img/flags/spain-select.svg" alt="SPA" /></span>
+							<span class="lang-popup__item-txt">Español</span>
+							<input hidden="hidden" type="radio" name="lang" value="Español" />
+							<span class="lang-popup__item-radio"></span>
+						</label>
+						<label class="flex-center-between lang-popup__item">
+							<span class="lang-popup__item-flag"><img src="img/flags/portugal-select.svg" alt="PRT" /></span>
+							<span class="lang-popup__item-txt">Português</span>
+							<input hidden="hidden" type="radio" name="lang" value="Português" />
+							<span class="lang-popup__item-radio"></span>
+						</label>
+						<label class="flex-center-between lang-popup__item">
+							<span class="lang-popup__item-flag"><img src="img/flags/russia-select.svg" alt="RUS" /></span>
+							<span class="lang-popup__item-txt">Русский</span>
+							<input hidden="hidden" type="radio" name="lang" value="Русский" />
+							<span class="lang-popup__item-radio"></span>
+						</label>
+						<label class="flex-center-between lang-popup__item">
+							<span class="lang-popup__item-flag"><img src="img/flags/korean-select.svg" alt="KOR" /></span>
+							<span class="lang-popup__item-txt">한국어</span>
+							<input hidden="hidden" type="radio" name="lang" value="한국어" />
+							<span class="lang-popup__item-radio"></span>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="mob-menu" id="js-mob-menu">
+				<nav class="mob-menu-nav">
+					<ul>
+						<li><a href="#" class="color">buy</a></li>
+						<li><a href="#" class="color">send</a></li>
+						<li><a href="#" class="color">cash out</a></li>
+						<li><a href="#" class="color">exchange</a></li>
+						<li><a href="#" class="color">store</a></li>
+						<li><a href="#" class="color">card</a></li>
+						<li><a href="#">about crypterium</a></li>
+						<li><a href="#">learn center</a></li>
+						<li><a href="#">help center</a></li>
+					</ul>
+				</nav>
+				<div class="flex-center-start mob-menu-tulls">
+					<img class="mob-menu-tulls__pic" src="img/mob-menu/c.svg" alt="" />
+					<a href="#" class="btn mob-menu-tulls__btn">Try now</a>
+				</div>
+				<div class="mob-menu-soc-title">Contact us</div>
+				<ul class="flex-center-between mob-menu-soc">
+					<li><a href="https://www.facebook.com/crypterium.org/" target="_blank" class="mob-menu-soc__item" title="Facebook">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M28.9407 24.2257H25.7871V35.9976H21.0095V24.2257H18.7373V20.0873H21.0095V17.4104C21.0095 15.4963 21.9015 12.4976 25.8304 12.4976L29.3683 12.5132V16.5291H26.8011C26.3793 16.5291 25.7871 16.7438 25.7871 17.6563V20.092H29.3592L28.9407 24.2257Z" />
+						</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/crypterium" target="_blank" class="mob-menu-soc__item" title="Twitter">
+							<svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M34.2375 17.4148C33.4524 17.7738 32.6069 18.0174 31.7213 18.1261C32.6261 17.566 33.3201 16.6808 33.6489 15.6257C32.8017 16.1427 31.8634 16.5194 30.8659 16.7221C30.0665 15.8431 28.9272 15.2949 27.6667 15.2949C25.2461 15.2949 23.2854 17.3196 23.2854 19.8145C23.2854 20.1684 23.3234 20.5144 23.3986 20.8452C19.7574 20.656 16.528 18.8567 14.3676 16.1212C13.9893 16.7895 13.774 17.5661 13.774 18.3941C13.774 19.9628 14.5477 21.347 15.722 22.1569C15.004 22.1337 14.3292 21.9298 13.7372 21.5905C13.7372 21.6103 13.7372 21.6285 13.7372 21.6483C13.7372 23.8373 15.2482 25.6643 17.2522 26.0794C16.8854 26.1831 16.4978 26.2391 16.0987 26.2391C15.8164 26.2391 15.5419 26.2109 15.2736 26.1582C15.8324 27.954 17.4503 29.2607 19.3682 29.2969C17.8683 30.51 15.9791 31.231 13.9256 31.231C13.571 31.231 13.2218 31.2112 12.8804 31.1687C14.819 32.4509 17.1216 33.1997 19.5961 33.1997C27.6557 33.1997 32.0644 26.3112 32.0644 20.3384C32.0644 20.1424 32.0595 19.9482 32.0517 19.7539C32.9083 19.1167 33.6505 18.3203 34.2375 17.4148Z" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/c/CrypteriumTV" target="_blank" class="mob-menu-soc__item" title="YouTube">
+							<svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M33.5115 20.2008C33.5115 18.4181 32.1136 16.9736 30.3893 16.9736H15.7405C14.0165 16.9736 12.6187 18.4185 12.6187 20.2008V28.8537C12.6187 30.6363 14.0165 32.0808 15.7405 32.0808H30.3889C32.1137 32.0808 33.511 30.636 33.511 28.8537V20.2008H33.5115ZM20.9752 28.1778V20.05L26.9422 24.1143L20.9752 28.1778Z" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="mob-menu-soc__item" title="Medium">
+							<svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M27.9676 28.5454L29.3224 29.8741V29.9405H22.5482V29.8741L23.9031 28.5454C24.0321 28.4125 24.0966 28.2132 24.0966 28.0139V19.6433C24.0966 19.3111 24.0966 18.7797 24.1611 18.3811L19.5805 30.0734H19.516L14.7418 19.3111C14.6773 19.0454 14.6128 19.0454 14.5482 18.8461V25.8881C14.4837 26.3531 14.5482 26.8181 14.7418 27.2832L16.6773 29.8741V29.9405H11.645V29.8741L13.5805 27.2832C13.7741 26.8846 13.8386 26.3531 13.7741 25.8881V18.1153C13.7741 17.7167 13.7095 17.3846 13.4515 17.0524L12.0966 15.2587V15.1923H16.9353L20.9999 24.2937L24.5482 15.1923H29.2579V15.2587L27.9031 16.7867C27.774 16.9195 27.7095 17.1188 27.774 17.3181V28.0804C27.7095 28.2132 27.774 28.4125 27.9676 28.5454Z" />
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="20" height="19" fill="white" transform="translate(11 13)"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://t.me/crypterium" target="_blank" class="mob-menu-soc__item" title="Telegram">
+							<svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3991 23.5661L16.4601 25.5005L18.4192 31.9516C18.5443 32.3649 19.038 32.5176 19.3654 32.2434L22.1864 29.8883C22.4821 29.6416 22.9032 29.6292 23.2124 29.8591L28.3006 33.6422C28.6509 33.9028 29.1471 33.7063 29.2351 33.2729L32.9626 14.9122C33.0584 14.4389 32.604 14.0435 32.1637 14.2181L11.3934 22.4232C10.8807 22.6256 10.885 23.3688 11.3991 23.5661ZM18.1035 24.4707L27.9946 18.2322C28.1723 18.1206 28.3553 18.3666 28.2027 18.5116L20.0393 26.2821C19.7527 26.5556 19.5674 26.9216 19.5149 27.3188L19.2371 29.4289C19.2003 29.7108 18.8139 29.7387 18.7377 29.4662L17.6684 25.618C17.5458 25.179 17.7243 24.7104 18.1035 24.4707Z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="flex-center-between mob-menu-soc-links">
+					<a href="#" target="_blank">Terms and Conditions</a>
+					<a href="#" target="_blank">Privacy Policy</a>
+				</div>
+			</div>		
+			<div id="fullpage">
+				<section class="vertical-scrolling slide slide--1" data-anchor="first">
+					<div class="section" id="section-start">
+						<div class="part part--first">				
+							<section class="first-sec">
+								<div class="container">
+									<div class="flex-column-between first-sec__wrap">
+										<div class="flex-column-center first-sec__main">
+											<div class="first-sec-ring">
+												<div class="first-sec-ring__item first-sec-ring__item--1"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--2"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--3"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--4"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--5"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--6"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--7"></div>
+												<div class="first-sec-ring__item first-sec-ring__item--8"></div>
+											</div>
+											<h1 class="first-sec-title">ultimate bitcoin wallet</h1>
+											<p class="first-sec-title-txt">Enter the world of crypto with the <br class="mob-show" />Crypterium App - one-stop solution to all your <br/>crypto-related needs</p>
+										</div>
+										<div class="media">
+											<div class="flex-center-between media__wrap">
+												<a href="http://businessweekme.com/crypto-payments-are-going-mainstream/" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/bloomberg.svg" alt="bloomberg" style="width:12.4rem" />
+												</a>
+												<a href="https://www.businessinsider.com/ex-visa-uk-ceo-marc-obrien-crypterium-cryptocurrency-2018-5" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/business-insider.svg" alt="business insider" style="width:7.7rem"/>
+												</a>
+												<a href="https://share.insider.thomsonreuters.com/link?entryId=0_59obifyc" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/reuters.svg" alt="business insider" style="width:14.5rem" />
+												</a>
+												<a href="https://www.forbes.com/sites/darrynpollock/2018/11/20/the-future-of-payments-is-here-how-can-crypto-play-its-part/#43b0fbb42dc3" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/forbs.svg" alt="forbs" style="width:9.1rem" />
+												</a>
+												<a href="https://bitcoinmagazine.com/articles/igniting-crypto-payments-worldwide-through-crypterium" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/bitcoin.svg" alt="bitcoin" style="width:12.1rem" />
+												</a>
+												<a href="https://www.investing.com/news/cryptocurrency-news/visa-uk-exceo-joins-cryptocurrency-startup-as-executive-1458617" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/investing.svg" alt="investing" style="width:13.6rem" />
+												</a>
+												<a href="https://www.cbsnews.com/news/bitcoin-price-how-high-could-it-go/" target="_blank" class="media__item">
+													<img class="media__pic" src="img/media/cbs.svg" alt="cbs" style="width:7.6rem" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--2" data-anchor="about">
+					<div class="section" id="section-about">
+						<div class="part part--blue" id="js-about-scroll">
+							<div class="flex-column-start-between first-wrap">
+								<section class="top-sec top-sec--about">
+									<div class="container">
+										<div class="top-sec__wrap">
+											<h2 class="mob-hide sec-title">when there's a need, <br/><span>there's Crypterium</span></h2>
+											<h2 class="mob-show sec-title">ultimate <br/><span>bitcoin app</span></h2>
+											<p class="mob-show sec-txt">Still jumping between apps? <br/>Now you have the all-in-one solution</p>
+										</div>
+									</div>
+								</section>
+								<div class="about-fig" id="js-about-fig">
+									<img src="img/figures/about.png" alt="" />
+								</div>
+								<section class="about">
+									<div class="container">
+											<h2 class="mob-show sec-title">you got needs, <span>we got you</span></h2>
+											<div class="about__pagination" id="js-about-pagination">
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Buy</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/buy.svg" style="width: 2.7rem;" alt=""/></div>
+													</div>
+												</div>
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Send</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/send.svg" style="width: 2.4rem;" alt=""/></div>
+													</div>
+												</div>
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Cash out</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/cashout.svg" style="width: 2.6rem;" alt=""/></div>
+													</div>
+												</div>
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Exchange</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/exchange.svg" style="width: 2.3rem;" alt=""/></div>
+													</div>
+												</div>
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Store</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/store.svg" style="width: 2.2rem;" alt=""/></div>
+													</div>
+												</div>
+												<div class="about__pagination-mob-hide">
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Save</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/save.svg" style="width: 2.1rem;" alt=""/></div>
+													</div>
+												</div>
+												<div>
+													<div class="about__pagination-item">
+														<div class="about__pagination-item-txt">Card</div>
+														<div class="about__pagination-item-icn"><img src="img/slider-icns/card.svg" style="width: 2.1rem;" alt=""/></div>
+													</div>
+												</div>
+											</div>   				
+									</div>
+								</section>
+								<section class="about">
+									<div class="container">
+											<div class="about__slider" id="js-about-slider">
+												<div><div class="about__slider-txt">purchase <br/>cryptocurrency <br/>with <span>any bank card</span></div></div>
+												<div><div class="about__slider-txt">transfer money <br/>for free with <br><span>just a phone number</span></div></div>
+												<div><div class="about__slider-txt">send crypto directly <br/>to your bank card <br/>in a <span>fast, stress-free way</span></div></div>
+												<div><div class="about__slider-txt">always get <br/>the best rates <br/>from <span>top 10 exchanges</span></div></div>
+												<div><div class="about__slider-txt">keep your currencies <br/><span>safe & fully insured</span></div></div>
+												<div><div class="about__slider-txt">earn up to 6% APY <br/>on your <span>crypto holdings</span></div></div>
+												<div><div class="about__slider-txt">order <span>the first global <br/>crypto card</span> to spend <br/>crypto on the go</div></div>
+											</div>
+									</div>
+								</section>
+								<div class="media">
+									<div class="container">
+									<div class="flex-center-between media__wrap">
+										<a href="http://businessweekme.com/crypto-payments-are-going-mainstream/" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/bloomberg.svg" alt="bloomberg" style="width:12.4rem" />
+										</a>
+										<a href="https://www.businessinsider.com/ex-visa-uk-ceo-marc-obrien-crypterium-cryptocurrency-2018-5" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/business-insider.svg" alt="business insider" style="width:7.7rem"/>
+										</a>
+										<a href="https://share.insider.thomsonreuters.com/link?entryId=0_59obifyc" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/reuters.svg" alt="business insider" style="width:14.5rem" />
+										</a>
+										<a href="https://www.forbes.com/sites/darrynpollock/2018/11/20/the-future-of-payments-is-here-how-can-crypto-play-its-part/#43b0fbb42dc3" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/forbs.svg" alt="forbs" style="width:9.1rem" />
+										</a>
+										<a href="https://bitcoinmagazine.com/articles/igniting-crypto-payments-worldwide-through-crypterium" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/bitcoin.svg" alt="bitcoin" style="width:12.1rem" />
+										</a>
+										<a href="https://www.investing.com/news/cryptocurrency-news/visa-uk-exceo-joins-cryptocurrency-startup-as-executive-1458617" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/investing.svg" alt="investing" style="width:13.6rem" />
+										</a>
+										<a href="https://www.cbsnews.com/news/bitcoin-price-how-high-could-it-go/" target="_blank" class="media__item">
+											<img class="media__pic" src="img/media/cbs.svg" alt="cbs" style="width:7.6rem" />
+										</a>
+									</div>
+									</div>
+								</div>
+							</div>
+							<section class="details" id="details">
+								<div class="container">
+									<h2 class="sec-title align-right"><span>we're ahead</span><br/>in many ways</h2>
+									<div class="mob-hide flex-start-between">
+										<div class="details-headers">
+											<div class="details-headers__item">UI & UX</div>
+											<div class="details-headers__item">Buy / cash out</div>
+											<div class="details-headers__item">Exchange</div>
+											<div class="details-headers__item">Savings accounts</div>
+											<div class="details-headers__item">Referral program</div>
+											<div class="details-headers__item">Cashback</div>
+											<div class="details-headers__item">Insurance</div>
+											<div class="details-headers__item">Desktop version</div>
+										</div>
+										<div class="details-main flex-start-between" id="js-details-main">
+												<div class="flex-column-start details-main-item js-detail-item active">
+													<div class="flex-center-center details-main-item__logo">
+														<img src="img/details-logo/crypterium.svg" alt="Crypterium" />
+													</div>
+													<div class="details-main-item__col">
+														<div class="details-main-item__row"><div class="details-main-item__val"><span>10/10</span><button class="btn details-main-item__view js-detail-eye"></button></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>150+ countries</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>globally</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>unlimited rewards</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>unlimited cashback</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__fig"><img src="img/details-phones/crypterium.png" alt="" /></div>
+													</div>
+												</div>
+												<div class="flex-column-start details-main-item js-detail-item">
+													<div class="flex-center-center details-main-item__logo">
+														<img src="img/details-logo/coinbase.svg" alt="Coinbase" />
+													</div>
+													<div class="details-main-item__col">
+														<div class="details-main-item__row"><div class="details-main-item__val"><span>6/10</span><button class="btn details-main-item__view js-detail-eye"></button></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>37 countries</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>37 countries</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>$10/user</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__fig"><img src="img/details-phones/coinbase.png" alt="" /></div>
+													</div>
+												</div>
+												<div class="flex-column-start details-main-item js-detail-item">
+													<div class="flex-center-center details-main-item__logo">
+														<img src="img/details-logo/btccom.svg" alt="BTC.com" />
+													</div>
+													<div class="details-main-item__col">
+														<div class="details-main-item__row"><div class="details-main-item__val"><span>3/10</span><button class="btn details-main-item__view js-detail-eye"></button></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__fig"><img src="img/details-phones/btccom.png" alt="" /></div>
+													</div>
+												</div>
+												<div class="flex-column-start details-main-item js-detail-item">
+													<div class="flex-center-center details-main-item__logo">
+														<img src="img/details-logo/blockchain.svg" alt="blockchain" />
+													</div>
+													<div class="details-main-item__col">
+														<div class="details-main-item__row"><div class="details-main-item__val"><span>5/10</span><button class="btn details-main-item__view js-detail-eye"></button></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__fig"><img src="img/details-phones/blockchain.png" alt="" /></div>
+													</div>
+												</div>
+												<div class="flex-column-start details-main-item js-detail-item">
+													<div class="flex-center-center details-main-item__logo">
+														<img src="img/details-logo/luno.svg" alt="Luno" />
+													</div>
+													<div class="details-main-item__col">
+														<div class="details-main-item__row"><div class="details-main-item__val"><span>5/10</span><button class="btn details-main-item__view js-detail-eye"></button></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>in 40 countries</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>in 40 countries</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"><span>$15/user</span></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val del"></div></div>
+														<div class="details-main-item__row"><div class="details-main-item__val check"></div></div>
+														<div class="details-main-item__fig"><img src="img/details-phones/luno.png" alt="" /></div>
+													</div>
+												</div>
+										</div>
+									</div>
+									<div class="mob-show">
+										<div class="flex-start-between details-mob-overlay">
+											<div class="details-mob__col details-mob__col--first">
+												<div class="details-mob__col-header"></div>
+												<div class="details-mob__col-main details-mob__col-main--first">
+													<div class="details-mob__item">
+														<img src="img/details-logo/crypterium-small.svg" alt="Crypterium" />Crypterium
+													</div>
+													<div class="details-mob__item">
+														<img src="img/details-logo/coinbase-small.svg" alt="Coinbase" />Coinbase
+													</div>
+													<div class="details-mob__item">
+														<img src="img/details-logo/btccom-small.svg" alt="btc.com" />btc.com
+													</div>
+													<div class="details-mob__item">
+														<img src="img/details-logo/blockchain-small.svg" alt="Blockchain" />Blockchain
+													</div>
+													<div class="details-mob__item">
+														<img src="img/details-logo/luno-small.svg" alt="Luno" />Luno
+													</div>
+												</div>
+											</div>
+											<div class="details-mob">
+												<div class="details-mob__wrap">										
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">UI & UX</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="align-center details-main-item__val">10/10</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="align-center details-main-item__val">6/10</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="align-center details-main-item__val">3/10</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="align-center details-main-item__val">5/10</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="align-center details-main-item__val">5/10</div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Buy / cash out</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">150+ countries</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">37 countries</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">40 countries</div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Exchange</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">globally</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">37 countries</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">in 40 countries</div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Savings accounts</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Referral program</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">unlimited rewards</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">$10/user</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">$15/user</div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Cashback</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check">unlimited cashback</div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Insurance</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val del"></div>
+															</div>
+														</div>
+													</div>
+													<div class="details-mob__col">
+														<div class="details-mob__col-header">Desktop version</div>
+														<div class="details-mob__col-main">
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+															<div class="details-mob__item">
+																<div class="details-main-item__val check"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="mob-hide read-more">
+								<div class="container">
+									<h2 class="sec-title">when in doubt, <br/><span>read more</span></h2>
+									<div class="flex-stretch-start read-more__wrap">
+										<a href="https://news.crypterium.com/the-best-bitcoin-wallets-in-2019/" target='_blank' class="flipper-cont read-more__col read-more__col--left js-card-container js-card-long">
+											<div href="https://news.crypterium.com/the-best-bitcoin-wallets-in-2019/"  target='_blank' class="flipper--card read-more__item js-card">
+												<div class="read-more__col-emodji"><img src="img/emodji/love.png" alt="" /></div>
+												<div class="read-more__col-title">the best bitcoin <br/>wallets in <span>2019</span></div>
+												<div class="read-more__col-link">Read  more</div>
+												<img src="img/read-more/main.png" alt="" class="read-more__col-img" />
+											</div>
+										</a>
+										<a href="https://news.crypterium.com/bitcoin-wallet-ultimate-guide/" target='_blank' class="flipper-cont read-more__col read-more__col--right js-card-container">
+											<div class="flipper--card read-more__item js-card">
+												<div class="read-more__col-emodji"><img src="img/emodji/nurd.png" alt="" /></div>
+												<div class="read-more__col-title"><span>all to know <br/>about wallets</span></div>
+												<div class="read-more__col-link">Read  more</div>
+											</div>
+										</a>
+									</div>      				
+								</div>
+							</section>
+							<section class="play-sec play-sec--about">
+								<div class="container">
+									<h2 class="mob-hide sec-title align-right"><span>5 things</span> you need <br/>to know about us</h2>
+									<h2 class="mob-show sec-title"><span>5 things</span> about<br/>Crypterium</h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/MDj1JPRsDIQ" style="background-image: url(img/play-sec/vide-about.png);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch now</h2>
+											<p class="mob-hide play-sec__txt">Hit play and learn why the Crypterium App <br/>is the best cryptocurrency wallet ever</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/>Jump straigt to our tutorial</p>
+											<a href="https://news.crypterium.com/how-to-buy-cryptocurrency-with-a-debit-card-or-credit-card/" target="_blank" class="btn play-sec__btn mob-show">Try the App</a>
+										</div>
+										<p class="mob-show play-sec__bottom">start exploring the features</p>
+										
+									</div>
+								</div>
+							</section>
+							<section class="mob-hide reviews">
+								<div class="container">
+									<h2 class="align-left sec-title"><span>400 000 users loving </span> <br/>it and you will, too</h2>
+									<div class="reviews__slider" id="js-reviews-slider">
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Tigs12354</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Best looking crypto wallet</div>
+												<div class="reviews__slide-txt">Surprised how easy it is to use. <br/>Looks really good as well</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@E-knows.</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Definite A++</div>
+												<div class="reviews__slide-txt">This app just keeps getting better and <br/>better. So user friendly and so helpful</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Abdulzaid</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">The best crypto project out there</div>
+												<div class="reviews__slide-txt">This app is definitely a huge transformation in the financial industry. Defo going to be big</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Ulrich von Liechtenstein Sr.</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Awesome App</div>
+												<div class="reviews__slide-txt">Future of Money is here. I can’t wait to get my hands on my globally accepted crypto debit card.</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@maximandan</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">I love this App</div>
+												<div class="reviews__slide-txt">I’ve been waiting for a Bitcoin wallet that I could manage easily on my phone! So excited for more features on this app!!</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Anna</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Awesome</div>
+												<div class="reviews__slide-txt">Omg, love the new update! transferred BTC to my friend’s phone number and it came instantly! inssaaanee! 😍😍😍</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Lraminez</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Grande projeto!!</div>
+												<div class="reviews__slide-txt">Esse é o futuro das criptomoedas!!</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@Jim Heldberg</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Awesome app</div>
+												<div class="reviews__slide-txt">Really useful app! User-friendly interface and easy to buy crypto</div>
+											</div>
+										</div>
+										<div>
+											<div class="reviews__slide">
+												<div class="flex-center-between reviews__slide-row">
+													<div class="reviews__slide-name">@rene2108</div>
+													<div class="flex-center-center reviews__slide-stars">
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+														<img src="img/icons/star.svg" alt="" class="reviews__slide-star" />
+													</div>
+												</div>
+												<div class="reviews__slide-title">Sehr übersichtlich und praktisch</div>
+												<div class="reviews__slide-txt">Ich liebe diese App. Alles zusammen in einer App. Sehr gut 🙂</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="mob-hide down">
+								<div class="container">
+									<div class="down__txt"><span>explore</span> the features</div>
+								</div>
+							</div>
+							<section class="ring-fig">
+								<div class="container">
+										<div class="ring-fig__fig"><img src="img/figures/ipad-iphone.png" alt="" /></div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--buy">
+											<div class="ring-fig__wrap-group js-next-slide-btn">		
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--left">Buy</div>						
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/buy.svg" alt="" /></div>     							
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--send">
+											<div class="ring-fig__wrap-group js-next-slide-btn">
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--left">Send</div>								
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/send.svg" alt="" /></div>								
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--cashout">
+											<div class="ring-fig__wrap-group js-next-slide-btn">
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--left">Cash out</div>								
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/cashout.svg" alt="" /></div>								
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--exchange">
+											<div class="ring-fig__wrap-group js-next-slide-btn">		
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--left">Exchange</div>						
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/exchange.svg" alt="" /></div>								
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--card">
+											<div class="ring-fig__wrap-group js-next-slide-btn">	
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--right">Card</div>							
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/card.svg" alt="" /></div>								
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--savings">
+											<div class="ring-fig__wrap-group ring-fig__wrap-group--right js-next-slide-btn">
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--right">Savings</div>								
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/save.svg" alt="" /></div>								
+											</div>
+										</div>
+										<div class="mob-hide ring-fig__wrap ring-fig__wrap--store">
+											<div class="ring-fig__wrap-group js-next-slide-btn">			
+												<div class="ring-fig__wrap-txt ring-fig__wrap-txt--right">Store</div>					
+												<div class="ring-fig__wrap-icn"><img src="img/slider-icns/store.svg" alt="" /></div>								
+											</div>
+										</div>
+								</div>
+							</section>
+							<div class="mob-hide border-blc border-blc--yello">
+								<div class="container">
+									<div class="border-blc__txt">buy crypto</div>
+								</div>
+							</div>
+							<div class="mobile-nav-stack mob-show-flex" id='mobile-nav-stack-1'>
+								<a href="#section-buy" class='active yellow'>buy</a>
+								<a href="#section-send">send money</a>
+								<a href="#section-cashout">cash out</a>
+								<a href="#section-exchange">exchange</a>
+								<a href="#section-store">store</a>
+								<a href="#section-card">card</a>
+								<a href="#section-end">about crypterium</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--3" data-anchor="buy">
+					<div class="section" id="section-buy">
+						<div class="part part--yello" id="js-buy-scroll">
+							<section class="top-sec top-sec--buy">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="mob-hide sec-title top-sec__title">easiest and <br/>fastest way to <br/><span>buy Bitcoin</span></h2>
+										<h2 class="mob-show sec-title top-sec__title">easiest and <br/>fastest way <br/><span>to buy crypto</span></h2>
+										<p class="mob-hide sec-txt top-sec__txt">Buying cryptocurrencies used to be a painful experience. Not anymore. With Crypterium, purchase digital currencies with a few taps. We keep your card details safe and charge the lowest fees</p>
+										<p class="mob-show sec-txt top-sec__txt">Buying Bitcoin used to be a painful experience. <br/>With us, you can buy crypto with a few taps. We keep a card details safe and charge the lowest fees</p>
+										<a href="#" class="btn top-sec__btn top-sec__btn--buy mob-hide">Buy crypto</a>
+										<div class="top-sec__fig top-sec__fig--buy">
+											<img id="js-buy-fig" src="img/figures/buy.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="buy-slider">
+								<div class="container container--left-padd">
+									<div class="buy-slider-slider" id="js-buy-slider">
+										<div>
+											<div class="flex-end-between buy-slider-slide">
+												<div class="mob-hide buy-slider-slide__content">
+													<div class="mob-hide steps-slider__cont">
+														<div class="steps-slider__wrap">
+															<div class="step-slider__slider-wrap">
+																<div id="steps-slider-progbar"></div>
+																<div class="steps-slider__progbar step-1">
+																	<div class="steps-slider__progbar-bullet active"><span>€10</span></div>
+																	<div class="steps-slider__progbar-bullet"></div>
+																	<div class="steps-slider__progbar-bullet"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="flex-column-end buy-slider-slide__main">
+													<h2 class="mob-hide sec-title align-right">start small,<br/><span>think big</span></h2>
+													<p class="sec-txt align-right">Enter the crypto world holder with just €10 or<br/>go all-in with our monthly limit of €10,000</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-end-between buy-slider-slide">
+												<div class="mob-hide buy-slider-slide__content">
+													<div class="flex-center-start buy-slider-slide__pic">
+														<img src="img/logo/visa.svg" alt="Visa" style="width: 17.2rem" />
+														<img src="img/logo/mastercard.svg" alt="Mastercard" style="width: 11.3rem" />
+													</div>
+												</div>
+												<div class="flex-column-end buy-slider-slide__main">
+													<h2 class="mob-hide sec-title align-right">pay with any<br/><span>bank card</span></h2>
+													<p class="sec-txt align-right">Buy cryptocurrencies with <br/>any Visa and MasterCard </p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-end-between buy-slider-slide">
+												<div class="mob-hide buy-slider-slide__content">
+													<div class="buy-slider-slide__pic">
+														<img src="img/logo/group.svg" alt="Visa" style="width: 28.5rem" />
+													</div>
+												</div>
+												<div class="flex-column-end buy-slider-slide__main">
+													<h2 class="mob-hide sec-title align-right">in a blink<br/><span>of an eye</span></h2>
+													<p class="sec-txt align-right">Your digital assets are instantly credited to <br/>your Crypterium Wallet and ready to be used!</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<section class="mob-hide dive-deeper">
+								<div class="container container--left-padd">
+									<h2 class="sec-title dive-deeper__title"><span>dive</span><br/> deeper</h2>
+									<div class="dive-deeper__wrap">
+										<a href="#" class="flipper-cont dive-deeper__wrap-col js-card-container">
+											<div class="flipper--card dive-deeper__item js-card">
+												<div class="dive-deeper__item-link">read  more</div>
+												<div class="dive-deeper__item-title">is it a good time <br/>to buy Bitcoin?</div>
+												<img class="dive-deeper__item-pic" src="img/dive-deeper/bg-1.png" alt="">
+											</div>
+										</a>
+										<a href="#" class="flipper-cont dive-deeper__wrap-col js-card-container">
+											<div class="flipper--card dive-deeper__item js-card">
+												<div class="dive-deeper__item-link">read  more</div>
+												<div class="dive-deeper__item-emodji"><img src="img/emodji/fire.png" alt="" /></div>
+												<div class="dive-deeper__item-title">the best places <br/>to buy Bitcoin <br/>in 2019</div>
+											</div>
+										</a>
+										<a href="#" class="flipper-cont dive-deeper__wrap-col js-card-container js-card-hight">
+											<div class="flipper--card dive-deeper__item js-card">
+												<div class="dive-deeper__item-title">buy Bitcoin with debit & credit cards</div>
+												<div class="dive-deeper__item-link">read  more</div>
+												<img class="dive-deeper__item-pic" src="img/dive-deeper/bg-2.png" alt="">
+											</div>
+										</a>
+										<a href="#" class="flipper-cont dive-deeper__wrap-col js-card-container js-card-long">
+											<div class="flipper--card dive-deeper__item js-card">
+												<div class="dive-deeper__item-title">8 things to <br/>know before <br/>buying Bitcoin</div>
+												<div class="dive-deeper__item-link">read  more</div>
+												<img class="dive-deeper__item-pic" src="img/dive-deeper/bg-3.png" alt="">
+											</div>
+										</a>
+									</div>
+								</div>
+							</section>
+							<section class="play-sec play-sec--buy">
+								<div class="container container--left-padd">
+									<h2 class="sec-title">learn how to <span>buy Bitcoin</span></h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/MDj1JPRsDIQ" style="background-image: url(img/play-sec/vide-buy.jpg);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch or read</h2>
+											<p class="mob-hide play-sec__txt">It's never late to learn something awesome. Watch this video or read our tutorial to find out why this feature rocks!</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/><b>Jump straigt to our tutorial</b></p>
+											<a href="https://news.crypterium.com/how-to-buy-cryptocurrency-with-a-debit-card-or-credit-card/" target='_blank' class="btn play-sec__btn mob-hide">Read the guide</a>
+											<a href="#" class="btn play-sec__btn mob-show">Buy crypto</a>
+											<p class="mob-show play-sec__bottom">continue exploring the features</p>
+										</div>									
+									</div>
+								</div>
+								<div class="mobile-nav-stack mobile-nav-stack--expandable mobile-nav-stack--grey mob-show-flex" id='mobile-nav-stack-2'>
+									<a href="#section-send" class='active white btn--rounded'>send</a>
+									<a href="#section-cashout">cash out</a>
+									<a href="#section-exchange">exchange</a>
+									<a href="#section-store">store</a>
+									<a href="#section-card">card</a>
+									<a href="#section-end">about crypterium</a>
+									<p class='mobile-nav-stack__note'>show all features </p>
+								</div>
+							</section>
+							<div class="mob-hide border-blc border-blc--white">
+								<div class="container">
+									<div class="border-blc__txt">send money</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--4" data-anchor="send">
+					<div class="section" id="section-send">
+						<div class="part part--white" id="js-send-scroll">
+							<section class="top-sec top-sec--send">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="sec-title top-sec__title"><span>send money</span> <br/>anywhere <br/>for free</h2>
+										<p class="sec-txt top-sec__txt">All you need is the recipient’s phone number. <br class="mob-show" />They get the money even they don’t have the app yet. No fees. No waiting. No limits</p>
+										<a href="#" class="btn top-sec__btn top-sec__btn--send mob-hide">Send money</a>
+										<div class="top-sec__fig top-sec__fig--send">
+											<img id="js-send-fig" src="img/figures/send.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="how-it-works">
+								<div class="container container--left-padd">
+									<div class="flex-start-between how-it-works__wrap">
+										<div class="how-it-works__main">
+											<h2 class="sec-title align-right">how it<br/> <span>works</span></h2>
+											<p class="sec-txt align-right">Say good-bye to wallet addresses. Select <br/>the currency, amount and a contact from <br/>your phone book or enter a new number</p>
+										</div>
+										<div class="how-it-works__bar">
+											<div class="flex-center-between how-it-works__thumbler">
+												<button class="btn how-it-works__thumbler-item how-it-works__thumbler-item--1 active js-tab">Send</button>
+												<button class="btn how-it-works__thumbler-item how-it-works__thumbler-item--2 js-tab">Receive</button>
+												<div class="how-it-works__thumbler-baloon"></div>
+											</div>
+											<div class="how-it-works__items">
+												<div class="how-it-works__item js-tab-item active">
+													<div class="flex-start-between how-it-works__row">
+														<div class="how-it-works__col">
+															<div class="mob-hide how-it-works__col-title how-it-works__col-title--padding">CURRENCY</div>
+															<div class="how-it-works__current">															
+																<div class="how-it-works__current-wrap">
+																	<div class="how-it-works__current-main">
+																		<div class="flex-center-start how-it-works__current-item">
+																			<div class="how-it-works__current-item-pic"><img src="img/how-it-works/usdc.svg" alt="USDT" /></div>
+																			<div class="how-it-works__current-item-name">USDC</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="how-it-works__col">
+															<div class="mob-hide how-it-works__col-title">AMOUNT</div>
+															<div class="how-it-works__val">1.000</div>
+														</div>
+													</div>
+													<div class="how-it-works__col">
+														<div class="mob-hide how-it-works__col-title how-it-works__col-title--padding">recipient</div>
+														<div class="flex-center-between how-it-works__person">
+															<div class="how-it-works__person-ava"><img src="img/how-it-works/ava.png" alt="" /></div>
+															<div class="how-it-works__person-main">
+																<div class="how-it-works__person-name">Satoshi Nakamoto</div>
+																<div class="how-it-works__person-tel"><span>+ 1</span> 659 598 857</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="how-it-works__item js-tab-item">
+													<div class="flex-column-end how-it-works__chat">
+														<div class="how-it-works__chat-item">
+															<img src="img/how-it-works/cloud-blue.svg" style="width: 39.5rem" alt="" />
+														</div>
+														<div class="flex-center-end how-it-works__chat-item">
+															<img src="img/how-it-works/cloud-grey.svg" style="width: 15.8rem" alt="" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="form-sec">
+								<div class="container container--left-padd">
+									<div class="flex-start-between form-sec__wrap" id="js-form-sec">
+										<div class="form-sec__main">
+											<h2 class="sec-title">whole <br/><span>new level</span></h2>
+											<p class="sec-txt">Enter the details and figure out how much you can save by sending money with Crypterium compared to other remittance services on the market</p>
+										</div>
+										<div class="form-sec__bar">
+											<div class="form-sec__form">
+												<div class="form-sec__form-group">
+													<div class="form-sec__form-title">ENTER AMOUNT</div>
+													<div class="form-sec__form-wrap">
+														<label class="form-sec__form-numb-input">
+															<div class="form-sec__form-numb-input-symbol">$</div>
+															<input type="text" oninput="Ftest(this);" class="input form-sec__form-numb-input-input js-only-num-input" placeholder="0.00" id="js-numb-input" />
+														</label>
+													</div>
+												</div>
+												<div class="form-sec__form-group">
+													<div class="form-sec__form-title">SEND FROM</div>
+													<div class="form-sec__form-wrap">
+														<div class="form-sec__form-select js-styled-select">
+															<select>
+																<option value="AX">AALAND ISLANDS</option>
+																<option value="AF">AFGHANISTAN</option>
+																<option value="AL">ALBANIA</option>
+																<option value="DZ">ALGERIA</option>
+																<option value="AS">AMERICAN SAMOA</option>
+																<option value="AD">ANDORRA</option>
+																<option value="AO">ANGOLA</option>
+																<option value="AI">ANGUILLA</option>
+																<option value="AQ">ANTARCTICA</option>
+																<option value="AG">ANTIGUA AND BARBUDA</option>
+																<option value="AR">ARGENTINA</option>
+																<option value="AM">ARMENIA</option>
+																<option value="AW">ARUBA</option>
+																<option value="AU">AUSTRALIA</option>
+																<option value="AT">AUSTRIA</option>
+																<option value="AZ">AZERBAIJAN</option>
+																<option value="BS">BAHAMAS</option>
+																<option value="BH">BAHRAIN</option>
+																<option value="BD">BANGLADESH</option>
+																<option value="BB">BARBADOS</option>
+																<option value="BY">BELARUS</option>
+																<option value="BE">BELGIUM</option>
+																<option value="BZ">BELIZE</option>
+																<option value="BJ">BENIN</option>
+																<option value="BM">BERMUDA</option>
+																<option value="BT">BHUTAN</option>
+																<option value="BO">BOLIVIA</option>
+																<option value="BA">BOSNIA AND HERZEGOWINA</option>
+																<option value="BW">BOTSWANA</option>
+																<option value="BV">BOUVET ISLAND</option>
+																<option value="BR">BRAZIL</option>
+																<option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+																<option value="BN">BRUNEI DARUSSALAM</option>
+																<option value="BG">BULGARIA</option>
+																<option value="BF">BURKINA FASO</option>
+																<option value="BI">BURUNDI</option>
+																<option value="KH">CAMBODIA</option>
+																<option value="CM">CAMEROON</option>
+																<option value="CA">CANADA</option>
+																<option value="CV">CAPE VERDE</option>
+																<option value="KY">CAYMAN ISLANDS</option>
+																<option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+																<option value="TD">CHAD</option>
+																<option value="CL">CHILE</option>
+																<option value="CN">CHINA</option>
+																<option value="CX">CHRISTMAS ISLAND</option>
+																<option value="CO">COLOMBIA</option>
+																<option value="KM">COMOROS</option>
+																<option value="CK">COOK ISLANDS</option>
+																<option value="CR">COSTA RICA</option>
+																<option value="CI">COTE D'IVOIRE</option>
+																<option value="CU">CUBA</option>
+																<option value="CY">CYPRUS</option>
+																<option value="CZ">CZECH REPUBLIC</option>
+																<option value="DK">DENMARK</option>
+																<option value="DJ">DJIBOUTI</option>
+																<option value="DM">DOMINICA</option>
+																<option value="DO">DOMINICAN REPUBLIC</option>
+																<option value="EC">ECUADOR</option>
+																<option value="EG">EGYPT</option>
+																<option value="SV">EL SALVADOR</option>
+																<option value="GQ">EQUATORIAL GUINEA</option>
+																<option value="ER">ERITREA</option>
+																<option value="EE">ESTONIA</option>
+																<option value="ET">ETHIOPIA</option>
+																<option value="FO">FAROE ISLANDS</option>
+																<option value="FJ">FIJI</option>
+																<option value="FI">FINLAND</option>
+																<option value="FR">FRANCE</option>
+																<option value="GF">FRENCH GUIANA</option>
+																<option value="PF">FRENCH POLYNESIA</option>
+																<option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+																<option value="GA">GABON</option>
+																<option value="GM">GAMBIA</option>
+																<option value="GE">GEORGIA</option>
+																<option value="DE">GERMANY</option>
+																<option value="GH">GHANA</option>
+																<option value="GI">GIBRALTAR</option>
+																<option value="GR">GREECE</option>
+																<option value="GL">GREENLAND</option>
+																<option value="GD">GRENADA</option>
+																<option value="GP">GUADELOUPE</option>
+																<option value="GU">GUAM</option>
+																<option value="GT">GUATEMALA</option>
+																<option value="GN">GUINEA</option>
+																<option value="GW">GUINEA-BISSAU</option>
+																<option value="GY">GUYANA</option>
+																<option value="HT">HAITI</option>
+																<option value="HM">HEARD AND MC DONALD ISLANDS</option>
+																<option value="HN">HONDURAS</option>
+																<option value="HK">HONG KONG</option>
+																<option value="HU">HUNGARY</option>
+																<option value="IS">ICELAND</option>
+																<option value="IN">INDIA</option>
+																<option value="ID">INDONESIA</option>
+																<option value="IE">IRELAND</option>
+																<option value="IL">ISRAEL</option>
+																<option value="IT">ITALY</option>
+																<option value="JM">JAMAICA</option>
+																<option value="JP">JAPAN</option>
+																<option value="JO">JORDAN</option>
+																<option value="KZ">KAZAKHSTAN</option>
+																<option value="KE">KENYA</option>
+																<option value="KI">KIRIBATI</option>
+																<option value="KW">KUWAIT</option>
+																<option value="KG">KYRGYZSTAN</option>
+																<option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+																<option value="LV">LATVIA</option>
+																<option value="LB">LEBANON</option>
+																<option value="LS">LESOTHO</option>
+																<option value="LR">LIBERIA</option>
+																<option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+																<option value="LI">LIECHTENSTEIN</option>
+																<option value="LT">LITHUANIA</option>
+																<option value="LU">LUXEMBOURG</option>
+																<option value="MO">MACAU</option>
+																<option value="MG">MADAGASCAR</option>
+																<option value="MW">MALAWI</option>
+																<option value="MY">MALAYSIA</option>
+																<option value="MV">MALDIVES</option>
+																<option value="ML">MALI</option>
+																<option value="MT">MALTA</option>
+																<option value="MH">MARSHALL ISLANDS</option>
+																<option value="MQ">MARTINIQUE</option>
+																<option value="MR">MAURITANIA</option>
+																<option value="MU">MAURITIUS</option>
+																<option value="YT">MAYOTTE</option>
+																<option value="MX">MEXICO</option>
+																<option value="MC">MONACO</option>
+																<option value="MN">MONGOLIA</option>
+																<option value="MS">MONTSERRAT</option>
+																<option value="MA">MOROCCO</option>
+																<option value="MZ">MOZAMBIQUE</option>
+																<option value="MM">MYANMAR</option>
+																<option value="NA">NAMIBIA</option>
+																<option value="NR">NAURU</option>
+																<option value="NP">NEPAL</option>
+																<option value="NL">NETHERLANDS</option>
+																<option value="AN">NETHERLANDS ANTILLES</option>
+																<option value="NC">NEW CALEDONIA</option>
+																<option value="NZ">NEW ZEALAND</option>
+																<option value="NI">NICARAGUA</option>
+																<option value="NE">NIGER</option>
+																<option value="NG">NIGERIA</option>
+																<option value="NU">NIUE</option>
+																<option value="NF">NORFOLK ISLAND</option>
+																<option value="MP">NORTHERN MARIANA ISLANDS</option>
+																<option value="NO">NORWAY</option>
+																<option value="OM">OMAN</option>
+																<option value="PK">PAKISTAN</option>
+																<option value="PW">PALAU</option>
+																<option value="PA">PANAMA</option>
+																<option value="PG">PAPUA NEW GUINEA</option>
+																<option value="PY">PARAGUAY</option>
+																<option value="PE">PERU</option>
+																<option value="PH">PHILIPPINES</option>
+																<option value="PN">PITCAIRN</option>
+																<option value="PL">POLAND</option>
+																<option value="PT">PORTUGAL</option>
+																<option value="PR">PUERTO RICO</option>
+																<option value="QA">QATAR</option>
+																<option value="RE">REUNION</option>
+																<option value="RO">ROMANIA</option>
+																<option value="RU">RUSSIAN FEDERATION</option>
+																<option value="RW">RWANDA</option>
+																<option value="SH">SAINT HELENA</option>
+																<option value="KN">SAINT KITTS AND NEVIS</option>
+																<option value="LC">SAINT LUCIA</option>
+																<option value="PM">SAINT PIERRE AND MIQUELON</option>
+																<option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+																<option value="WS">SAMOA</option>
+																<option value="SM">SAN MARINO</option>
+																<option value="ST">SAO TOME AND PRINCIPE</option>
+																<option value="SA">SAUDI ARABIA</option>
+																<option value="SN">SENEGAL</option>
+																<option value="CS">SERBIA AND MONTENEGRO</option>
+																<option value="SC">SEYCHELLES</option>
+																<option value="SL">SIERRA LEONE</option>
+																<option value="SG">SINGAPORE</option>
+																<option value="SK">SLOVAKIA</option>
+																<option value="SI">SLOVENIA</option>
+																<option value="SB">SOLOMON ISLANDS</option>
+																<option value="SO">SOMALIA</option>
+																<option value="ZA">SOUTH AFRICA</option>
+																<option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+																<option value="ES">SPAIN</option>
+																<option value="LK">SRI LANKA</option>
+																<option value="SD">SUDAN</option>
+																<option value="SR">SURINAME</option>
+																<option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
+																<option value="SZ">SWAZILAND</option>
+																<option value="SE">SWEDEN</option>
+																<option value="CH">SWITZERLAND</option>
+																<option value="TW">TAIWAN</option>
+																<option value="TJ">TAJIKISTAN</option>
+																<option value="TH">THAILAND</option>
+																<option value="TL">TIMOR-LESTE</option>
+																<option value="TG">TOGO</option>
+																<option value="TK">TOKELAU</option>
+																<option value="TO">TONGA</option>
+																<option value="TT">TRINIDAD AND TOBAGO</option>
+																<option value="TN">TUNISIA</option>
+																<option value="TR">TURKEY</option>
+																<option value="TM">TURKMENISTAN</option>
+																<option value="TC">TURKS AND CAICOS ISLANDS</option>
+																<option value="TV">TUVALU</option>
+																<option value="UG">UGANDA</option>
+																<option value="UA">UKRAINE</option>
+																<option value="AE">UNITED ARAB EMIRATES</option>
+																<option value="GB">UNITED KINGDOM</option>
+																<option value="US">UNITED STATES</option>
+																<option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+																<option value="UY">URUGUAY</option>
+																<option value="UZ">UZBEKISTAN</option>
+																<option value="VU">VANUATU</option>
+																<option value="VE">VENEZUELA</option>
+																<option value="VN">VIET NAM</option>
+																<option value="WF">WALLIS AND FUTUNA ISLANDS</option>
+																<option value="EH">WESTERN SAHARA</option>
+																<option value="YE">YEMEN</option>
+																<option value="ZM">ZAMBIA</option>
+																<option value="ZW">ZIMBABWE</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="form-sec__form-group">
+													<div class="form-sec__form-title">SEND TO</div>
+													<div class="form-sec__form-wrap">
+														<div class="form-sec__form-select js-styled-select">
+															<select>
+																<option value="AX">AALAND ISLANDS</option>
+																<option value="AL">ALBANIA</option>
+																<option value="DZ">ALGERIA</option>
+																<option value="AS">AMERICAN SAMOA</option>
+																<option value="AD">ANDORRA</option>
+																<option value="AO">ANGOLA</option>
+																<option value="AI">ANGUILLA</option>
+																<option value="AQ">ANTARCTICA</option>
+																<option value="AG">ANTIGUA AND BARBUDA</option>
+																<option value="AR">ARGENTINA</option>
+																<option value="AM">ARMENIA</option>
+																<option value="AW">ARUBA</option>
+																<option value="AU">AUSTRALIA</option>
+																<option value="AT">AUSTRIA</option>
+																<option value="AZ">AZERBAIJAN</option>
+																<option value="BS">BAHAMAS</option>
+																<option value="BH">BAHRAIN</option>
+																<option value="BD">BANGLADESH</option>
+																<option value="BB">BARBADOS</option>
+																<option value="BY">BELARUS</option>
+																<option value="BE">BELGIUM</option>
+																<option value="BZ">BELIZE</option>
+																<option value="BJ">BENIN</option>
+																<option value="BM">BERMUDA</option>
+																<option value="BT">BHUTAN</option>
+																<option value="BO">BOLIVIA</option>
+																<option value="BA">BOSNIA AND HERZEGOWINA</option>
+																<option value="BW">BOTSWANA</option>
+																<option value="BV">BOUVET ISLAND</option>
+																<option value="BR">BRAZIL</option>
+																<option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+																<option value="BN">BRUNEI DARUSSALAM</option>
+																<option value="BG">BULGARIA</option>
+																<option value="BF">BURKINA FASO</option>
+																<option value="BI">BURUNDI</option>
+																<option value="KH">CAMBODIA</option>
+																<option value="CM">CAMEROON</option>
+																<option value="CA">CANADA</option>
+																<option value="CV">CAPE VERDE</option>
+																<option value="KY">CAYMAN ISLANDS</option>
+																<option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+																<option value="TD">CHAD</option>
+																<option value="CL">CHILE</option>
+																<option value="CN">CHINA</option>
+																<option value="CX">CHRISTMAS ISLAND</option>
+																<option value="CO">COLOMBIA</option>
+																<option value="KM">COMOROS</option>
+																<option value="CK">COOK ISLANDS</option>
+																<option value="CR">COSTA RICA</option>
+																<option value="CI">COTE D'IVOIRE</option>
+																<option value="CU">CUBA</option>
+																<option value="CY">CYPRUS</option>
+																<option value="CZ">CZECH REPUBLIC</option>
+																<option value="DK">DENMARK</option>
+																<option value="DJ">DJIBOUTI</option>
+																<option value="DM">DOMINICA</option>
+																<option value="DO">DOMINICAN REPUBLIC</option>
+																<option value="EC">ECUADOR</option>
+																<option value="EG">EGYPT</option>
+																<option value="SV">EL SALVADOR</option>
+																<option value="GQ">EQUATORIAL GUINEA</option>
+																<option value="ER">ERITREA</option>
+																<option value="EE">ESTONIA</option>
+																<option value="ET">ETHIOPIA</option>
+																<option value="FO">FAROE ISLANDS</option>
+																<option value="FJ">FIJI</option>
+																<option value="FI">FINLAND</option>
+																<option value="FR">FRANCE</option>
+																<option value="GF">FRENCH GUIANA</option>
+																<option value="PF">FRENCH POLYNESIA</option>
+																<option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+																<option value="GA">GABON</option>
+																<option value="GM">GAMBIA</option>
+																<option value="GE">GEORGIA</option>
+																<option value="DE">GERMANY</option>
+																<option value="GH">GHANA</option>
+																<option value="GI">GIBRALTAR</option>
+																<option value="GR">GREECE</option>
+																<option value="GL">GREENLAND</option>
+																<option value="GD">GRENADA</option>
+																<option value="GP">GUADELOUPE</option>
+																<option value="GU">GUAM</option>
+																<option value="GT">GUATEMALA</option>
+																<option value="GN">GUINEA</option>
+																<option value="GW">GUINEA-BISSAU</option>
+																<option value="GY">GUYANA</option>
+																<option value="HT">HAITI</option>
+																<option value="HM">HEARD AND MC DONALD ISLANDS</option>
+																<option value="HN">HONDURAS</option>
+																<option value="HK">HONG KONG</option>
+																<option value="HU">HUNGARY</option>
+																<option value="IS">ICELAND</option>
+																<option value="IN">INDIA</option>
+																<option value="ID">INDONESIA</option>
+																<option value="IE">IRELAND</option>
+																<option value="IL">ISRAEL</option>
+																<option value="IT">ITALY</option>
+																<option value="JM">JAMAICA</option>
+																<option value="JP">JAPAN</option>
+																<option value="JO">JORDAN</option>
+																<option value="KZ">KAZAKHSTAN</option>
+																<option value="KE">KENYA</option>
+																<option value="KI">KIRIBATI</option>
+																<option value="KW">KUWAIT</option>
+																<option value="KG">KYRGYZSTAN</option>
+																<option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+																<option value="LV">LATVIA</option>
+																<option value="LB">LEBANON</option>
+																<option value="LS">LESOTHO</option>
+																<option value="LR">LIBERIA</option>
+																<option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+																<option value="LI">LIECHTENSTEIN</option>
+																<option value="LT">LITHUANIA</option>
+																<option value="LU">LUXEMBOURG</option>
+																<option value="MO">MACAU</option>
+																<option value="MG">MADAGASCAR</option>
+																<option value="MW">MALAWI</option>
+																<option value="MY">MALAYSIA</option>
+																<option value="MV">MALDIVES</option>
+																<option value="ML">MALI</option>
+																<option value="MT">MALTA</option>
+																<option value="MH">MARSHALL ISLANDS</option>
+																<option value="MQ">MARTINIQUE</option>
+																<option value="MR">MAURITANIA</option>
+																<option value="MU">MAURITIUS</option>
+																<option value="YT">MAYOTTE</option>
+																<option value="MX">MEXICO</option>
+																<option value="MC">MONACO</option>
+																<option value="MN">MONGOLIA</option>
+																<option value="MS">MONTSERRAT</option>
+																<option value="MA">MOROCCO</option>
+																<option value="MZ">MOZAMBIQUE</option>
+																<option value="MM">MYANMAR</option>
+																<option value="NA">NAMIBIA</option>
+																<option value="NR">NAURU</option>
+																<option value="NP">NEPAL</option>
+																<option value="NL">NETHERLANDS</option>
+																<option value="AN">NETHERLANDS ANTILLES</option>
+																<option value="NC">NEW CALEDONIA</option>
+																<option value="NZ">NEW ZEALAND</option>
+																<option value="NI">NICARAGUA</option>
+																<option value="NE">NIGER</option>
+																<option value="NG">NIGERIA</option>
+																<option value="NU">NIUE</option>
+																<option value="NF">NORFOLK ISLAND</option>
+																<option value="MP">NORTHERN MARIANA ISLANDS</option>
+																<option value="NO">NORWAY</option>
+																<option value="OM">OMAN</option>
+																<option value="PK">PAKISTAN</option>
+																<option value="PW">PALAU</option>
+																<option value="PA">PANAMA</option>
+																<option value="PG">PAPUA NEW GUINEA</option>
+																<option value="PY">PARAGUAY</option>
+																<option value="PE">PERU</option>
+																<option value="PH">PHILIPPINES</option>
+																<option value="PN">PITCAIRN</option>
+																<option value="PL">POLAND</option>
+																<option value="PT">PORTUGAL</option>
+																<option value="PR">PUERTO RICO</option>
+																<option value="QA">QATAR</option>
+																<option value="RE">REUNION</option>
+																<option value="RO">ROMANIA</option>
+																<option value="RU">RUSSIAN FEDERATION</option>
+																<option value="RW">RWANDA</option>
+																<option value="SH">SAINT HELENA</option>
+																<option value="KN">SAINT KITTS AND NEVIS</option>
+																<option value="LC">SAINT LUCIA</option>
+																<option value="PM">SAINT PIERRE AND MIQUELON</option>
+																<option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+																<option value="WS">SAMOA</option>
+																<option value="SM">SAN MARINO</option>
+																<option value="ST">SAO TOME AND PRINCIPE</option>
+																<option value="SA">SAUDI ARABIA</option>
+																<option value="SN">SENEGAL</option>
+																<option value="CS">SERBIA AND MONTENEGRO</option>
+																<option value="SC">SEYCHELLES</option>
+																<option value="SL">SIERRA LEONE</option>
+																<option value="SG">SINGAPORE</option>
+																<option value="SK">SLOVAKIA</option>
+																<option value="SI">SLOVENIA</option>
+																<option value="SB">SOLOMON ISLANDS</option>
+																<option value="SO">SOMALIA</option>
+																<option value="ZA">SOUTH AFRICA</option>
+																<option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+																<option value="ES">SPAIN</option>
+																<option value="LK">SRI LANKA</option>
+																<option value="SD">SUDAN</option>
+																<option value="SR">SURINAME</option>
+																<option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
+																<option value="SZ">SWAZILAND</option>
+																<option value="SE">SWEDEN</option>
+																<option value="CH">SWITZERLAND</option>
+																<option value="TW">TAIWAN</option>
+																<option value="TJ">TAJIKISTAN</option>
+																<option value="TH">THAILAND</option>
+																<option value="TL">TIMOR-LESTE</option>
+																<option value="TG">TOGO</option>
+																<option value="TK">TOKELAU</option>
+																<option value="TO">TONGA</option>
+																<option value="TT">TRINIDAD AND TOBAGO</option>
+																<option value="TN">TUNISIA</option>
+																<option value="TR">TURKEY</option>
+																<option value="TM">TURKMENISTAN</option>
+																<option value="TC">TURKS AND CAICOS ISLANDS</option>
+																<option value="TV">TUVALU</option>
+																<option value="UG">UGANDA</option>
+																<option value="UA">UKRAINE</option>
+																<option value="AE">UNITED ARAB EMIRATES</option>
+																<option value="GB">UNITED KINGDOM</option>
+																<option value="US">UNITED STATES</option>
+																<option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+																<option value="UY">URUGUAY</option>
+																<option value="UZ">UZBEKISTAN</option>
+																<option value="VU">VANUATU</option>
+																<option value="VE">VENEZUELA</option>
+																<option value="VN">VIET NAM</option>
+																<option value="WF">WALLIS AND FUTUNA ISLANDS</option>
+																<option value="EH">WESTERN SAHARA</option>
+																<option value="YE">YEMEN</option>
+																<option value="ZM">ZAMBIA</option>
+																<option value="ZW">ZIMBABWE</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<button class="btn btn--yello form-sec__form-submit" id="js-surprise-me" type="button">Surprise me</button>
+											</div>
+										</div>
+										<div class="form-sec__hidden-tab-wrap">
+											<div class="flex-stretch-between form-sec__hidden-tab">
+												<div class="form-sec__hidden-tab-col">
+													<div class="flex-center-center form-sec__hidden-tab-logo"></div>
+													<div class="form-sec__hidden-tab-main">
+														<div class="form-sec__hidden-tab-item">Fees</div>
+														<div class="form-sec__hidden-tab-item">Service time</div>
+														<div class="form-sec__hidden-tab-item">Pick up method</div>
+													</div>
+												</div>
+												<div class="flex-stretch-between form-sec__hidden-tab-overlay">
+													<div class="form-sec__hidden-tab-col active">
+														<div class="flex-center-center form-sec__hidden-tab-logo"><img src="img/form-sec/crypterium.svg" alt="Crypterium" /></div>
+														<div class="form-sec__hidden-tab-main">
+															<div class="form-sec__hidden-tab-item">0%</div>
+															<div class="form-sec__hidden-tab-item">Instant</div>
+															<div class="form-sec__hidden-tab-item">Digital wallet</div>
+														</div>
+													</div>
+													<div class="form-sec__hidden-tab-col">
+														<div class="flex-center-center form-sec__hidden-tab-logo"><img src="img/form-sec/transfe.svg" alt="TransferWise" /></div>
+														<div class="form-sec__hidden-tab-main">
+															<div class="form-sec__hidden-tab-item">From 1.5%</div>
+															<div class="form-sec__hidden-tab-item">48 hours</div>
+															<div class="form-sec__hidden-tab-item">Bank account</div>
+														</div>
+													</div>
+													<div class="form-sec__hidden-tab-col">
+														<div class="flex-center-center form-sec__hidden-tab-logo"><img src="img/form-sec/western-union.svg" alt="Western Union" /></div>
+														<div class="form-sec__hidden-tab-main">
+															<div class="form-sec__hidden-tab-item">From 0.3%</div>
+															<div class="form-sec__hidden-tab-item">24 hours</div>
+															<div class="form-sec__hidden-tab-item">Bank account</div>
+														</div>
+													</div>
+													<div class="form-sec__hidden-tab-col">
+														<div class="flex-center-center form-sec__hidden-tab-logo"><img src="img/form-sec/moneygram.svg" alt="MoneyGram" /></div>
+														<div class="form-sec__hidden-tab-main">
+															<div class="form-sec__hidden-tab-item">From 0.4%</div>
+															<div class="form-sec__hidden-tab-item">24 hours</div>
+															<div class="form-sec__hidden-tab-item">Cash in office</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="flex-center-end form-sec__hidden-tab-bar">
+												<p class="mob-hide form-sec__note-paragraph">* information based on an international $1,000 transaction</p>
+												<button class="btn form-sec__hidden-tab-restart" id="js-start-again">start again</button>
+												<div class="mob-show form-sec__hidden-tab-note">swipe left</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="play-sec play-sec--send">
+								<div class="container container--left-padd">
+									<h2 class="mob-hide sec-title"><span>learn how to</span> send money abroad</h2>
+									<h2 class="mob-show sec-title">learn how to <br/><span>send money</span></h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/MDj1JPRsDIQ" style="background-image: url(img/play-sec/vide-send.png);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch or read</h2>
+											<p class="mob-hide play-sec__txt">It's never late to learn something awesome. Watch this video or read our tutorial to find out why the wallet rocks!</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/><b>Jump straigt to our tutorial</b></p>
+											<a href="https://news.crypterium.com/how-to-send-money-internationally-by-phone-number-using-cryptocurrencies/" target='_blank' class="btn play-sec__btn mob-hide">Read the guide</a>
+											<a href="#" class="btn play-sec__btn mob-show">Send money</a>
+											<p class="mob-show play-sec__bottom">continue exploring the features</p>											
+										</div>									
+									</div>
+								</div>
+								<div class="mobile-nav-stack mobile-nav-stack--expandable mobile-nav-stack--blue mob-show-flex" id='mobile-nav-stack-3'>
+									<a href="#section-buy" class='active black'>cash out</a>
+									<a href="#section-send">exchange</a>
+									<a href="#section-store">store</a>
+									<a href="#section-card">card</a>
+									<a href="#section-end">about crypterium</a>
+									<a href="#section-buy">buy</a>
+									<p class="mobile-nav-stack__note">show all features</p>
+								</div>
+							</section>
+							<div class="border-blc border-blc--black">
+								<div class="container">
+									<div class="border-blc__txt">cashout</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--5" data-anchor="cashout">
+					<div class="section" id="section-cashout">
+						<div class="part part--black">
+							<section class="top-sec top-sec--cashout">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="sec-title top-sec__title"><span>cash out</span> <br/>anytime, <br/>instantly</h2>
+										<p class="sec-txt top-sec__txt">Stop waiting for what is yours. Whenever you need extra cash, use Crypterium to send crypto straight to your bank card in seconds</p>
+										<a href="#" class="btn top-sec__btn top-sec__btn--cashout mob-hide">Withdraw money</a>
+										<div class="top-sec__fig top-sec__fig--cashout">
+											<img id="js-send-fig" src="img/figures/cashout.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="steps-slider steps-slider--buy">
+								<div class="container container--left-padd">
+									<div class="flex-start-between steps-slider__wrap">
+										<div class="steps-slider__cont">
+											<div class="steps-slider__cashout-cards">
+												<div class="steps-slider__cashout-cards-front">
+													<img class="mob-hide" src="img/cashout-cards/top.svg" alt="" />
+													<img class="mob-show" src="img/cashout-cards/top-mob.svg" alt="" />
+												</div>
+												<div class="steps-slider__cashout-cards-back">
+													<img src="img/cashout-cards/mastercard.png" alt="" />
+												</div>
+											</div>
+										</div>
+										<div class="steps-slider__slider-wrap">
+											<div class="steps-slider__slider" id="js-steps-slider-sec-5">
+												<div>
+													<div class="steps-slider__slide">
+														<h2 class="sec-title align-right"><span>globally</span> <br/>available</h2>
+														<p class="sec-txt align-right">Access your money in seconds <br/>regardless of where you are</p>
+													</div>
+												</div>
+												<div>
+													<div class="steps-slider__slide">
+														<h2 class="sec-title align-right">uniqly <br/><span>fast</span></h2>
+														<p class="sec-txt align-right">Your funds arrive to your debit <br/>or credit card balance in minutes</p>
+													</div>
+												</div>
+												<div>
+													<div class="steps-slider__slide">
+														<h2 class="sec-title align-right">surprisingly <br/><span>affordable</span></h2>
+														<p class="sec-txt align-right">Our fee is 2% - and that's <br/>the lowest commission on the market</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>      		
+							<section class="mob-hide read-more read-more--cashout">
+								<div class="container container--left-padd">
+									<h2 class="sec-title">when in doubt, <br/><span>read more</span></h2>
+									<div class="flex-stretch-between read-more__wrap">
+										<a href="#" class="flipper-cont read-more__col read-more__col--left js-card-container js-card-long">
+											<div href="#" class="flipper--card read-more__item js-card">
+												<div class="read-more__col-link">Read  more</div>
+												<div class="read-more__col-title">how to <br/>convert crypto <br/>into <span>cash</span></div>
+												<img src="img/read-more/cash-out.png" alt="" class="read-more__col-img" />
+											</div>
+										</a>
+										<a href="#" class="flipper-cont read-more__col read-more__col--right js-card-container">
+											<div class="flipper--card read-more__item js-card">
+												<div class="read-more__col-emodji"><img src="img/emodji/nurd.png" alt="" /></div>
+												<div class="read-more__col-title">best ways to <br/>cash out crypto</div>
+												<div class="read-more__col-link">Read  more</div>
+											</div>
+										</a>
+									</div>      				
+								</div>
+							</section>
+							<section class="play-sec play-sec--cashout">
+								<div class="container container--left-padd">
+									<h2 class="sec-title mob-hide"><span>learn how</span> <br/>to cash out</h2>
+									<h2 class="sec-title mob-show">learn how to<br/><span>cash out</span></h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/cJ_SXzDyn0E" style="background-image: url(img/play-sec/vide-cashout.png);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch or read</h2>
+											<p class="mob-hide play-sec__txt">It's never late to learn something awesome. Watch this video or read our tutorial to find out why the wallet rocks!</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/><b>Jump straigt to our tutorial</b></p>
+											<a href="https://news.crypterium.com/how-to-cash-out-cryptocurrency-instantly-to-your-bank-card/" target='_blank' class="btn play-sec__btn mob-hide">Read the guide</a>
+											<a href="#" target='_blank' class="btn play-sec__btn mob-show">Withdraw money</a>
+											<p class="mob-show play-sec__bottom">continue exploring the featuress</p>
+										</div>									
+									</div>
+								</div>
+							</section>
+							<div class="border-blc border-blc--blue">  
+								<div class="container">
+									<div class="border-blc__txt">exchange</div>
+								</div>
+							</div>
+							<div class="mobile-nav-stack mobile-nav-stack--expandable mob-show-flex" id='mobile-nav-stack-4'>
+								<a href="#section-exchange" class='active blue'>exchange</a>
+								<a href="#section-store">store</a>
+								<a href="#section-card">card</a>
+								<a href="#section-end">about crypterium</a>
+								<a href="#section-buy">buy</a>
+								<a href="#section-send">send</a>
+								<p class="mobile-nav-stack__note">show all features</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--6" data-anchor="exchange">
+					<div class="section" id="section-exchange">
+						<div class="part part--blue part--yellow-h">
+							<section class="top-sec top-sec--exchange">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="sec-title top-sec__title">ten <br/><span>exchanges,</span> <br/>one app</h2>
+										<p class="sec-txt top-sec__txt">Looking for best exchange rates? You’ve come to the right place. We’ve integrated with Top exchanges to always get you the best deal</p>
+										<a href="https://go.onelink.me/8cgW/48d01c59" class="btn top-sec__btn top-sec__btn--exchange mob-hide">Exchange now</a>
+										<div class="top-sec__fig top-sec__fig--exchange">
+											<img id="js-send-fig" src="img/figures/exchange.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>      		
+							<section class="price">
+								<div class="container container--left-padd">
+									<div class="flex-center-between price__wrap">
+										<div class="price__main">
+											<h2 class="sec-title align-right"><span>compare</span> <br/>prices</h2>
+											<p class="sec-txt align-right">Our bid-ask matching system powered by artificial intelligence monitors all exchange rates and picks the best one for each of your transactions</p>											
+										</div>
+										<div class="price__tab">
+											<div class="flex-center-between price__tab-row">
+												<div class="price__tab-icn"><img src="img/price/binance.svg" alt="Binance" /></div>
+												<div class="price__tab-val">
+													<div class="price__tab-val-price">$ 101 518</div>
+													<div class="price__tab-val-move green">+ 2.32</div>
+												</div>
+											</div>
+											<div class="flex-center-between price__tab-row">
+												<div class="price__tab-icn"><img src="img/price/kraken.svg" alt="Kraken" /></div>
+												<div class="price__tab-val">
+													<div class="price__tab-val-price">$ 102 880</div>
+													<div class="price__tab-val-move green">+ 3.12</div>
+												</div>
+											</div>
+											<div class="flex-center-between price__tab-row">
+												<div class="price__tab-icn"><img src="img/price/kucoin.svg" alt="Kucoin" /></div>
+												<div class="price__tab-val">
+													<div class="price__tab-val-price">$ 99 164</div>
+													<div class="price__tab-val-move red">- 1.80</div>
+												</div>
+											</div>
+											<div class="flex-center-between price__tab-row">
+												<div class="price__tab-icn"><img src="img/price/crypterium-sx.svg" alt="Crypterium" /></div>
+												<div class="price__tab-val">
+													<div class="price__tab-val-price">$ 102 880</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="play-sec play-sec--exchange">
+								<div class="container container--left-padd">
+									<h2 class="mob-hide sec-title"><span>learn how</span> to <br/>exchange Bitcoin</h2>
+									<h2 class="mob-show sec-title">learn how to<br/><span>exchange</span></h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/4EOHbvMhcqA" style="background-image: url(img/play-sec/video-exchange.png);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch or read</h2>
+											<p class="mob-hide play-sec__txt">It's never late to learn something awesome. Watch this video or read our tutorial to find out why the wallet rocks!</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/><b>Jump straigt to our tutorial</b></p>
+											<a href="#" class="btn play-sec__btn mob-hide">Read the guide</a>
+											<a href="#" class="btn play-sec__btn mob-show">Exchange now</a>
+											<p class="mob-show play-sec__bottom">continue exploring the features</p>											
+										</div>									
+									</div>
+								</div>
+							</section>
+							<div class="border-blc border-blc--white-black">
+								<div class="container">
+									<div class="border-blc__txt">store</div>
+								</div>
+							</div>
+							<div class="mobile-nav-stack mobile-nav-stack--expandable mob-show-flex" id='mobile-nav-stack-5'>
+								<a href="#section-store" class='active white'>store</a>
+								<a href="#section-card">card</a>
+								<a href="#section-end">about crypterium</a>
+								<a href="#section-buy">buy</a>
+								<a href="#section-send">send</a>
+								<a href="#section-cashout">cash out</a>
+								<p class="mobile-nav-stack__note">show all features</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--7" data-anchor="store">
+					<div class="section" id="section-store">
+						<div class="part part--white-black-txt">						
+							<section class="top-sec top-sec--store">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="sec-title top-sec__title"><span>store <br/>money</span> <br/>securely</h2>
+										<p class="sec-txt top-sec__txt">A lifetime-free wallet that keeps your digital currencies safe and always ready to use</p>
+										<a href="https://go.onelink.me/8cgW/48d01c59" class="btn top-sec__btn top-sec__btn--store mob-hide">Download now</a>
+										<div class="top-sec__fig top-sec__fig--store">
+											<img id="js-send-fig" src="img/figures/store.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="store__slider">
+								<div class="container container--left-padd">
+									<div class="store__slider-slider" id="js-store-slider">
+										<div>
+											<div class="flex-start-between store__slider-slide">
+												<div class="flex-column-end store__slider-main">
+													<h2 class="sec-title align-right"><span>multi</span><br/>currency</h2>
+													<p class="sec-txt align-right">Access your Bitcoin, Ethereum <br/>and other cryptocurrencies wherever <br/>you are, whenever you need them.</p>
+												</div>
+												<div class="store__slider-content">
+													<div class="steps-slider__cards" id="js-slider-cards">
+														<div>
+															<div class="steps-slider__card orange">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/bitcoin.svg" alt="Bitcoin" /></div>
+																	<div class="steps-slider__card-change">+ 34.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">Bitcoin</div>
+																<div class="steps-slider__card-cours">3.0827 BTC</div>
+																<div class="steps-slider__card-usd">$25 374.5</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card blue">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/etherium.svg" alt="Etherium" /></div>
+																	<div class="steps-slider__card-change">+ 4.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">Etherium</div>
+																<div class="steps-slider__card-cours">12.082 ETH</div>
+																<div class="steps-slider__card-usd">$1 972.58</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card grey">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/litecoin.svg" alt="Litecoin" /></div>
+																	<div class="steps-slider__card-change">+ 1.4 %</div>
+																</div>
+																<div class="steps-slider__card-name">Litecoin</div>
+																<div class="steps-slider__card-cours">46.08 LTC</div>
+																<div class="steps-slider__card-usd">$2 674.578</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card yello">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/crypterium.svg" alt="Crypterium" /></div>
+																	<div class="steps-slider__card-change">+ 34.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">Crypterium</div>
+																<div class="steps-slider__card-cours">1256.68 CRPT</div>
+																<div class="steps-slider__card-usd">$376.8</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card black">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/ripple.svg" alt="Ripple" /></div>
+																	<div class="steps-slider__card-change">+ 4.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">Ripple</div>
+																<div class="steps-slider__card-cours">120.082 XRP</div>
+																<div class="steps-slider__card-usd">$31.58</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card dark-blue">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/usdt.svg" alt="USDC" /></div>
+																	<div class="steps-slider__card-change">+ 4.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">USDC</div>
+																<div class="steps-slider__card-cours">46.08 USDC</div>
+																<div class="steps-slider__card-usd">$46.01</div>
+															</div>
+														</div>
+														<div>
+															<div class="steps-slider__card orange">
+																<div class="flex-center-between steps-slider__card-header">
+																	<div class="steps-slider__card-icn"><img src="img/currencies/bitcoin.svg" alt="Bitcoin Cash" /></div>
+																	<div class="steps-slider__card-change">+ 34.0 %</div>
+																</div>
+																<div class="steps-slider__card-name">Bitcoin Cash</div>
+																<div class="steps-slider__card-cours">256.68 BCH</div>
+																<div class="steps-slider__card-usd">$71 936.5</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+										<div>
+											<div class="flex-start-between store__slider-slide">
+												<div class="flex-column-end store__slider-main">
+													<h2 class="sec-title align-right">rest <br/><span>insured</span></h2>
+													<p class="sec-txt align-right">Never worry again about your crypto. <br/>All funds stored in the Crypterium App <br/>are fully insured against cyber-attacks.</p>
+												</div>
+												<div class="store__slider-content">
+													<div class="store__slider-upto">
+														<img class="mob-hide" src="img/store-slider/up-to.svg" alt="up to $100 000" style="width: 37.5rem;" />
+														<img class="mob-show" src="img/store-slider/up-to-mob.svg" alt="up to $100 000" style="width: 32.3rem;" />
+													</div>
+												</div>												
+											</div>
+										</div>
+										<div>
+											<div class="flex-start-between store__slider-slide">
+												<div class="flex-column-end store__slider-main">
+													<h2 class="sec-title align-right">trusted <br/><span>partners</span></h2>
+													<p class="sec-txt align-right">Your wallet is protected by BitGo - the <br/>world’s most secure and compliant <br/>cryptocurrency custody solution.</p>
+												</div>
+												<div class="store__slider-content">
+													<div class="flex-center-start store__slider-logotyps">
+														<img src="img/store-slider/bitgo.svg" alt="BitGo" style="width: 16rem">
+														<img src="img/store-slider/jumio.svg" alt="jumio" style="width: 12.4rem">
+														<img src="img/store-slider/chainalysis.svg" alt="chainalysis" style="width: 15.6rem">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="play-sec play-sec--store">
+								<div class="container container--left-padd">
+									<h2 class="mob-hide sec-title"><span>learn how to</span> <br/>store money</h2>
+									<h2 class="mob-show sec-title">learn how to <br/><span>store money</span></h2>
+									<div class="flex-center-start play-sec__main">
+										<div class="play-sec__vedeo-blc js-play-container">
+											<div class="play-sec__vedeo-blc-wrap js-play-wrap">
+												<div class="play-sec__disc js-palay-btn" data-href="https://www.youtube.com/embed/cJ_SXzDyn0E" style="background-image: url(img/play-sec/vide-store.jpg);">
+													<div class="play-sec__play">
+														<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="37.5" cy="37.5" r="37.5" />
+															<path d="M54.6237 35.7745L29.3657 18.155C29.0983 17.9691 28.7516 17.9498 28.466 18.1004C28.1794 18.2528 28 18.5524 28 18.8801V54.119C28 54.4468 28.1794 54.7472 28.466 54.8996C28.5931 54.9665 28.7325 55 28.871 55C29.0443 55 29.2167 54.9471 29.3657 54.8441L54.6237 37.2246C54.8598 37.0599 55 36.7894 55 36.4996C55 36.2097 54.8589 35.9393 54.6237 35.7745Z" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="play-sec__txt-blc">
+											<h2 class="play-sec__title">watch or read</h2>
+											<p class="mob-hide play-sec__txt">It's never late to learn something awesome. Watch this video or read our tutorial to find out why the wallet rocks!</p>
+											<p class="mob-show play-sec__txt">Prefer reading? <br/><b>Jump straigt to our tutorial</b></p>
+											<a href="https://news.crypterium.com/how-to-exchange-cryptocurrencies-with-the-best-rates-on-the-market/"  target='_blank' class="btn play-sec__btn mob-hide">Read the guide</a>
+											<a href="https://go.onelink.me/8cgW/48d01c59" class="btn play-sec__btn mob-show">Download now</a>
+											<p class="mob-show play-sec__bottom">continue exploring the features</p>											
+										</div>						
+									</div>
+								</div>
+							</section>
+							<div class="mob-hide border-blc border-blc--black">
+								<div class="container">
+									<div class="border-blc__txt">savings <span>coming soon</span></div>
+								</div>
+							</div>
+							<div class="mob-hide part part--black">
+								<div class="border-blc border-blc--yello">
+									<div class="container">
+										<div class="border-blc__txt">card</div>
+									</div>
+								</div>
+							</div>
+							<div class="mobile-nav-stack mobile-nav-stack--expandable mobile-nav-stack--grey mob-show-flex" id='mobile-nav-stack-6'>
+								<a href="#section-card" class='active yellow'>card</a>
+								<a href="#section-end">about crypterium</a>
+								<a href="#section-buy">buy</a>
+								<a href="#section-send">send</a>
+								<a href="#section-cashout">cash out</a>
+								<a href="#section-exchange">exchange</a>
+								<p class="mobile-nav-stack__note">show all features</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--8" data-anchor="card">
+					<div class="section" id="section-card">
+						<div class="part part--yello">						
+							<section class="top-sec top-sec--card">
+								<div class="container container--left-padd">
+									<div class="top-sec__wrap">
+										<h2 class="sec-title top-sec__title">first and <br/>only <span>Bitcoin <br/>card</span></h2>
+										<p class="sec-txt top-sec__txt">Manage your card directly in the Crypterium App—check your payment history, top the card, change your PIN, and more! All in one place</p>
+										<a href="#" class="btn top-sec__btn top-sec__btn--card mob-hide">Order card</a>
+										<div class="top-sec__fig top-sec__fig--card">
+											<img id="js-send-fig" src="img/figures/card.png" alt="" />
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="last-slider">
+								<div class="container container--left-padd">
+									<div class="last-slider__pagination" id="js-last-slider-pagination">
+										<div>
+											<div class="last-slider__pagination-slide">
+												<div class="last-slider__pagination-title">Global by nature</div>
+												<div class="last-slider__pagination-numb">1</div>
+											</div>      						
+										</div>
+										<div>
+											<div class="last-slider__pagination-slide">
+												<div class="last-slider__pagination-title">Unprecedented limits</div>
+												<div class="last-slider__pagination-numb">2</div>
+											</div>      						
+										</div>
+										<div>
+											<div class="last-slider__pagination-slide">
+												<div class="last-slider__pagination-title">Ultimate control</div>
+												<div class="last-slider__pagination-numb">3</div>
+											</div>      						
+										</div>
+										<div>
+											<div class="last-slider__pagination-slide">
+												<div class="last-slider__pagination-title">Best exchange rates</div>
+												<div class="last-slider__pagination-numb">4</div>
+											</div>      						
+										</div>
+										<div>
+											<div class="last-slider__pagination-slide">
+												<div class="last-slider__pagination-title">Privacy you deserve</div>
+												<div class="last-slider__pagination-numb">5</div>
+											</div>      						
+										</div>
+									</div>
+									<div class="last-slider__slider" id="js-last-slider">
+										<div>
+											<div class="flex-center-between last-slider__slide">
+												<div class="last-slider__slide-left">
+													<h2 class="sec-title"><span>get it anywhere</span><br/>in the world</h2>
+												</div>
+												<div class="last-slider__slide-right">
+													<p class="sec-txt">Your crypto is borderless. Why should your card be any different? No matter where you are based, we will deliver a Crypterium Card at your door</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-center-between last-slider__slide">
+												<div class="last-slider__slide-left">
+													<h2 class="sec-title"><span>limits that never</span> <br/>stop you</h2>
+												</div>
+												<div class="last-slider__slide-right">
+													<p class="sec-txt">Make the most out of your digital assets with unprecedented limits: spend up to $10,000/day or $60,000/month</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-center-between last-slider__slide">
+												<div class="last-slider__slide-left">
+													<h2 class="sec-title"><span>control at your</span> <br/>fingertips</h2>
+												</div>
+												<div class="last-slider__slide-right">
+													<p class="sec-txt">Manage your card directly in the Crypterium App—check your payment history, top the card, change your PIN, and more! All in one place</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-center-between last-slider__slide">
+												<div class="last-slider__slide-left">
+													<h2 class="sec-title"><span>smartest</span> <br/>eXchange rates</h2>
+												</div>
+												<div class="last-slider__slide-right">
+													<p class="sec-txt">Let the Crypterium Card do the math! Our App is integrated with the Top 10 exchanges to offer you the best rates available for each of your transactions</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="flex-center-between last-slider__slide">
+												<div class="last-slider__slide-left">
+													<h2 class="sec-title"><span>your data</span> <br/>stays yours</h2>
+												</div>
+												<div class="last-slider__slide-right">
+													<p class="sec-txt">This card is protected against data sharing and other threats to your privacy. We realize its importance as well as you do.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mob-hide last-slider__bar">
+										<a href="#" class="last-slider__more">explore details</a>
+									</div>
+								</div>
+							</section>
+							<section class="mob-show learn-more-link">
+								<div class="container">
+									<a href="#" class="learn-more-link__link" style="background-image: url(img/learn-more/sup-link.png);">
+										<span class="learn-more-link__link-sup">visit the page</span>
+										<span class="learn-more-link__link-title">learn more about <br/>crypterium card</span>
+									</a>
+									<a href="#" class="btn play-sec__btn mob-show">Order card</a>
+									<p class="mob-show play-sec__bottom">continue exploring the features</p>									
+								</div>
+							</section>
+							<div class="mobile-nav-stack mobile-nav-stack--expandable mobile-nav-stack--grey mob-show-flex" id='mobile-nav-stack-7'>
+								<a href="#section-end" class='active white'>about crypterium</a>
+								<a href="#section-buy">buy</a>
+								<a href="#section-send">send</a>
+								<a href="#section-cashout">cash out</a>
+								<a href="#section-exchange">exchange</a>
+								<a href="#section-store">store</a>
+								<p class="mobile-nav-stack__note">show all features</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="js-learn-center" class="mob-show">
+					<div class="section" id="section-learn-center">
+						<div class="part part--white-black-txt">
+							<section class="learn-center">
+								<div class="container">
+									<h2 class="sec-title">when in doubt, <br/><span>read more</span></h2>								
+									<div class="learn-center__list">
+										<a href="https://news.crypterium.com/bitcoin-wallet-ultimate-guide/" target="_blank" class="learn-center__item">
+											<span class="learn-center__item-title learn-center__item-title--blue">bitcoin wallet <br/>ultimate guide</span>
+											<img src="img/learn-center/face-with-heart-shaped-eyes.png" alt="" class="learn-center__item-emodji" />
+										</a>
+										<a href="https://news.crypterium.com/the-best-bitcoin-wallets-in-2019/" target="_blank" class="learn-center__item" style="background-image: url(img/learn-center/bg-1.png);">
+											<span class="learn-center__item-title learn-center__item-title--black-blue">the best <br/>bitcoin wallets <br/><span>in 2019</span></span>
+										</a>
+										<a href="#" target="_blank" class="learn-center__item">
+											<span class="learn-center__item-title learn-center__item-title--black">is it a good time <br/>to buy Bitcoin?</span>
+											<img src="img/learn-center/nerd-face.png" alt="" class="learn-center__item-emodji" />
+										</a>
+										<a href="#" target="_blank" class="learn-center__item" style="background-image: url(img/learn-center/bg-2.png);">
+											<span class="learn-center__item-title learn-center__item-title--white">the best places <br/>to buy Bitcoin</span>
+										</a>
+										<a href="https://news.crypterium.com/8-things-to-know-before-buying-bitcoin/" target="_blank" class="learn-center__item">
+											<span class="learn-center__item-title learn-center__item-title--black">8 things to know <br>before buying <br/>Bitcoin</span>
+											<img src="img/learn-center/grinning-face-with-star-eyes.png" alt="" class="learn-center__item-emodji" />
+										</a>
+										<a href="https://medium.com/crypterium/how-to-cash-out-crypto-to-any-bank-card-instantly-999f936c1e15" target="_blank" class="learn-center__item" style="background-image: url(img/learn-center/bg-3.png);">
+											<span class="learn-center__item-title learn-center__item-title--black-white">how to <br/>convert crypto <br/><span>into cash</span></span>
+										</a>									
+										<a href="#" target="_blank" class="learn-center__item">
+											<span class="learn-center__item-title learn-center__item-title--black">best ways to <br/>cash out crypto</span>
+											<img src="img/learn-center/rocket.png" alt="" class="learn-center__item-emodji" />
+										</a>
+										<a href="https://medium.com/crypterium/how-to-buy-crypto-with-a-credit-card-499e3383a28f" target="_blank" class="learn-center__item" style="background-image: url(img/learn-center/bg-4.png);">
+											<span class="learn-center__item-title learn-center__item-title--white">buy Bitcoin <br/>with debit & <br/>credit card</span>
+										</a>
+									</div>
+									<div class="subscription-title">Subscribe for the latest Crypterium news </div>
+									<form action="#" method="post" class="subscription">
+										<input type="email" class="subscription__input" name="email" placeholder="Email" />
+										<input class="btn subscription__btn" type="submit" placeholder="Sign up" />
+										<!--<div class="subscription__ready">Thank you!</div>-->
+									</form>
+									<ul class="flex-center-center footer__soc">
+										<li><a href="https://www.facebook.com/crypterium.org/" target="_blank" class="footer__soc-item" title="Facebook"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
+										<li><a href="https://twitter.com/crypterium" target="_blank" class="footer__soc-item" title="Twitter"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
+										<li><a href="https://www.youtube.com/c/CrypteriumTV" target="_blank" class="footer__soc-item" title="YouTube"><img src="img/icons/youtube.svg" alt="YouTube"></a></li>
+										<li><a href="https://medium.com/@crypterium" target="_blank" class="footer__soc-item" title="Medium"><img src="img/icons/medium.svg" alt="Medium"></a></li>
+										<li><a href="https://t.me/crypterium" target="_blank" class="footer__soc-item" title="Telegram"><img src="img/icons/telegram.svg" alt="Telegram"></a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+				<section class="vertical-scrolling slide slide--9" data-anchor="last">
+					<div class="section" id="section-end">
+						<div class="part part--white-black-txt">
+							<div class="flex-column-between last-blc">
+								<section class="last-cards">
+									<div class="container">
+										<div class="flex-start-start last-cards__wrap">
+											<div class="last-cards__col last-cards__col--0">
+												<div class="mob-hide send-form-title"><span>download</span> the app</div>
+												<div class="mob-show send-form__hide-title">download now</div>
+												<div class="mob-hide send-form-subtitle">or leave a phone number to recieve a link </div>
+												<div class="flex-center-start footer__download-bar">
+													<img class="footer__download-bar-c" src="img/footer/c.svg" alt="C" />
+													<a href="https://go.onelink.me/8cgW/48d01c59" class="footer__download-bar-download-link">
+														<img src="img/footer/googleplay.svg" alt="GooglePlay" />
+													</a>
+													<a href="https://go.onelink.me/8cgW/48d01c59"  class="footer__download-bar-download-link">
+														<img src="img/footer/appstore.svg" alt="AppStore" />
+													</a>
+												</div>
+												<form id='footer-sms-form' class="mob-hide send-form">
+													<div class="send-form-tel">
+														<input type="tel" name='phone' id="footer-phone"/>
+													</div>
+													<input class="btn send-form__submit" type="submit" value='Send link' />
+													<!--<div class="send-form__ready">Thank you!</div>-->												
+												</form>
+											</div>
+											<div class="last-cards__col last-cards__col--1 js-card-container flipper-cont">
+												<div class="last-cards__item last-cards__item--blue">
+													<div class="last-cards__item-link">
+														<a href="https://crypterium.com/">visit <span>crypterium</span></a>
+														<div class="last-cards__item-link-sub">to learn more about the company</div>
+													</div>
+													<div class="last-cards__item-link">
+														<a href="https://news.crypterium.com/">read <span>blog</span></a>
+														<div class="last-cards__item-link-sub">to access latest announcements & market news</div>
+													</div>
+													<div class="last-cards__item-link">
+														<a href="https://crypterium.zendesk.com/hc/en-us/categories/360001861434-Crypterium-Card">help <span>center</span></a>
+														<div class="last-cards__item-link-sub">reach out to our friendly 24/7 support team</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://app.crypterium.com/" class="mob-hide flipper-cont last-cards__col last-cards__col--2 js-card-container">
+												<div class="flipper--card js-card last-cards__item last-cards__item--black">
+													<div class="last-cards__item-fig"><img src="img/last-cards/macbook2.png" alt="" /></div>
+													<div class="last-cards__item-main">
+														<div class="last-cards__item-title">web wallet</div>
+														<div class="last-cards__item-more">Log in or Sign up <i class="left"></i></div>
+													</div>
+												</div>
+											</a>
+<!--
+											<a href="https://cards.crypterium.com/" class="mob-hide flipper-cont last-cards__col last-cards__col--3 js-card-container">
+												<div class="flipper--card js-card last-cards__item last-cards__item--yellow">
+													<div class="last-cards__item-pic"><img src="img/last-cards/pic-1.png" alt="" /></div>
+													<div class="last-cards__item-polygon">
+														<img src="img/last-cards/yellow.svg" alt="" />
+													</div>
+													<div class="last-cards__item-main">
+														<div class="last-cards__item-title">crypterium card</div>
+														<div class="last-cards__item-more">Learn more about Cards <i class="left"></i></div>
+													</div>
+												</div>
+											</a>
+-->
+										</div>
+									</div>
+								</section>
+								<section class="footer">
+									<div class="container">
+										<div class="flex-end-between footer__wrap">
+											<div class="flex-center-between footer__left">
+												<div class="mob-show footer__cont-us">Contact us</div>
+												<a href="https://crypterium.com/content/privacy_web.pdf" target="_blank" class="mob-hide footer__link">Privacy Policy</a>
+												<a href="https://crypterium.com/content/app_terms.pdf" target="_blank" class="mob-hide footer__link">Terms and Conditions</a>
+												<a href="mailto:support@crypterium.com" class="footer__link footer__link--mail">support@crypterium.com</a>
+											</div>
+											<div class="footer__right">
+												<div class="mob-hide align-right subscription-title">Subscribe for the latest Crypterium news </div>
+												<form action="#" method="post" class="mob-hide subscription">
+													<input type="email" class="subscription__input" name="email" placeholder="Email" />
+													<input class="btn subscription__btn" type="submit" value='Sign up' />
+													<!--<div class="subscription__ready">Thank you!</div>-->
+												</form>
+												<ul class="flex-center-end footer__soc">
+													<li><a href="https://www.facebook.com/crypterium.org/" target="_blank" class="footer__soc-item" title="Facebook"><img src="img/icons/facebook.svg" alt="Facebook" /></a></li>
+													<li><a href="https://twitter.com/crypterium" target="_blank" class="footer__soc-item" title="Twitter"><img src="img/icons/twitter.svg" alt="Twitter" /></a></li>
+													<li><a href="https://www.youtube.com/c/CrypteriumTV" target="_blank" class="footer__soc-item" title="YouTube"><img src="img/icons/youtube.svg" alt="YouTube" /></a></li>
+													<li><a href="https://medium.com/@crypterium" target="_blank" class="footer__soc-item" title="Medium"><img src="img/icons/medium.svg" alt="Medium" /></a></li>
+													<li><a href="https://t.me/crypterium" target="_blank" class="footer__soc-item" title="Telegram"><img src="img/icons/telegram.svg" alt="Telegram" /></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div> 
+				</section>
+			</div> 
+			<div class="video-popup" id="js-video-popup">
+				<div class="video-popup__overlay" id=js-video-popup-close></div>
+				<div class="video-popup__main" id="js-video-popup-main"></div>
+			</div>
+			<div class="popup popup--buy" id="js-popup-buy">
+				<div class="popup__overlay js-popup-close"></div>
+				<div class="popup__main">
+					<div class="container">
+						<div class="popup__wrap">
+							<button class="btn popup__close js-popup-close" title="Close">Close</button>
+							<div class="popup__content">
+								<h2 class="popup__title">check out the <br/><span>desktop wallet</span></h2>
+								<p class="popup__txt">use Crypterium wallet on every device</p>
+								<a href="https://go.onelink.me/8cgW/48d01c59" class="btn btn--blue popup__btn">Register now</a>
+							</div>
+							<div class="popup__fig popup__fig--buy">
+								<img src="img/popup/buy.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup popup--exchange" id="js-popup-exchange">
+				<div class="popup__overlay js-popup-close"></div>
+				<div class="popup__main">
+					<div class="container">
+						<div class="popup__wrap">
+							<button class="btn popup__close js-popup-close" title="Close">Close</button>
+							<div class="popup__content">
+								<h2 class="popup__title">leave your phone <br/>number & <span>get a $5 gift</span></h2>
+								<p class="popup__txt">after you first transaction</p>
+								<form  class="popup__form">
+									<div class="flex-center-start popup__form-fildset">
+										<input type="text" class="popup__form-input popup__form-input--code" name='phone_prefix' id='phone_prefix' value="+ 44">
+										<input type="text" class="popup__form-input popup__form-input--numb" name='phone_main' id='phone_main' value="07983">
+										<input class="btn popup__form-btn popup__form-btn--exchange" type="submit" value='Send link'>
+									</div>
+									<div class="popup__form-error">phone not valid</div>
+									<button class="btn popup__form-ready popup__form-ready--exchange js-popup-exchange-close" type="button">Thank you!</button>
+								</form>
+							</div>
+							<div class="popup__fig popup__fig--exchange">
+								<img src="img/popup/exchange.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup popup--card" id="js-popup-card">
+				<div class="popup__overlay js-popup-close"></div>
+				<div class="popup__main">
+					<div class="container">
+						<div class="popup__wrap">
+							<button class="btn popup__close js-popup-close" title="Close">Close</button>
+							<div class="popup__content">
+								<h2 class="popup__title"><span>order your card</span> in <br/>the crypterium app </h2>
+								<form onsubmit="window.sendSMS(this); return false;" class="popup__form">
+									<div class="flex-center-start popup__form-fildset">
+										<input type="text" class="popup__form-input popup__form-input--code" name='phone_prefix' id='phone_prefix' value="+ 44">
+										<input type="text" class="popup__form-input popup__form-input--numb" name='phone_main' id='phone_main' value="07983">
+										<input class="btn popup__form-btn popup__form-btn--card" type="submit" placeholder="Send link" />
+									</div>
+									<div class="popup__form-error">phone not valid</div>
+									<button class="btn popup__form-ready popup__form-ready--card js-popup-card-close" type="button">Thank you!</button>
+								</form>
+							</div>
+							<div class="popup__fig popup__fig--card">
+								<img src="img/popup/card.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup popup--lastnews" id="js-popup-lastnews">
+				<div class="popup__overlay js-popup-close"></div>
+				<div class="popup__main">
+					<div class="container">
+						<div class="popup__wrap">
+							<button class="btn popup__close js-popup-close" title="Close">Close</button>
+							<div class="popup__content">
+								<h2 class="popup__title">sign up to get <br/><span>the latest news</span></h2>
+								<p class="popup__txt">leave your email and stay in touch with Crypterium</p>
+								<form  class="popup__form">
+									<div class="flex-center-start popup__form-fildset">
+										<input type="email" class="popup__form-input popup__form-input--mail" name='email_main' id='email_main' />
+										<input class="btn popup__form-btn popup__form-btn--lastnews" type="submit" value='Sign up' />
+									</div>
+									<div class="popup__form-error">email not valid</div>
+									<button class="btn popup__form-ready popup__form-ready--lastnews js-popup-lastnews-close" type="button">Thank you!</button>
+								</form>
+							</div>
+							<div class="popup__fig popup__fig--lastnews">
+								<img src="img/popup/last-news.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end ROOT -->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!-- Branch SendSMS -->
+	<script src="js/send-sms.js"></script>
+	<!-- perfect scrollbar -->	
+	<script src="js/vendors/perfect-scrollbar.min.js"></script>
+	<script src="js/perfectscrollbar.init.js"></script>
+	<!-- NoUI Slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js" integrity="sha256-VG+4f1Hm2q4e+DTEOaiZKlWjJm5W4yqnXNvKkWBYA20=" crossorigin="anonymous"></script>
+	<script src="js/range.js"></script>	
+	<!-- fullPage -->
+	<script src="js/vendors/jquery.fullPage.min.js"></script>	
+	<script src="js/fullpage.init.js"></script>	
+	<!-- slick -->
+	<script src="js/vendors/slick.min.js"></script>	
+	<script src="js/slick.init.js"></script>
+	<!-- intlTelInput -->
+	<script src="js/vendors/intlTelInput.js"></script>
+	<script src="js/intlTelInput.init.js"></script>
+	<!-- Mobile Nav Stack -->
+	<script src="js/mobile-stack-nav.js"></script>
+	<!-- Loader-->
+	<script src="js/loader.js"></script>
+	<!-- Geo lookup-->
+	<script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+	<!--main-->
+	<script src="js/main.js"></script>
+</body>
+</html>

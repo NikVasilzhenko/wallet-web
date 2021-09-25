@@ -1,0 +1,16 @@
+@import "vendors/normalize.css";
+@import "vendors/jquery.fullPage.css";
+@import "vendors/perfect-scrollbar.css";
+@import "vendors/slick.css";
+@import "vendors/intlTelInput.css";
+@import "fonts.css";
+@import "basic.css";
+@import "layout.css";
+@import "typographyc.css";
+@import "button.css";
+@import "loader.css";
+@import "mobile-nav-stack.css";
+@import "range.css";
+
+@import "app-landing.css";
+@import "responsive.css";
